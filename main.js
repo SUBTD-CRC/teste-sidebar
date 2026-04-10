@@ -73,9 +73,9 @@ const themeIcons = {
     'carnaval': 'fa-mask'
 };
 
-function getThemeIcon(name) {
+function getItemIcon(name, defaultIcon) {
     const lowerName = (name || '').toLowerCase();
-    let iconClass = 'fa-layer-group';
+    let iconClass = defaultIcon;
     for (const key in themeIcons) {
         if (lowerName.includes(key)) {
             iconClass = themeIcons[key];
@@ -144,8 +144,8 @@ function normalizeData(data) {
 function createItemHTML(item, type, isSelected) {
     const selectedClass = isSelected ? 'selected' : '';
     let iconHtml = '';
-    if (type === 'theme') iconHtml = `<div class="item-icon">${getThemeIcon(item.name)}</div>`;
-    else if (type === 'subtheme') iconHtml = `<div class="item-icon"><i class="fa-solid fa-list-ul"></i></div>`;
+    if (type === 'theme') iconHtml = `<div class="item-icon">${getItemIcon(item.name, 'fa-layer-group')}</div>`;
+    else if (type === 'subtheme') iconHtml = `<div class="item-icon">${getItemIcon(item.name, 'fa-folder-open')}</div>`;
     else iconHtml = `<div class="item-icon"><i class="fa-regular fa-circle-dot"></i></div>`;
 
     return `
@@ -396,8 +396,44 @@ addForm.addEventListener('submit', (e) => {
 // Initialize Sortable Lists over columns
 function initSortables() {
     new Sortable(listThemes, {
+        group: 'shared-levels',
         handle: '.drag-handle', animation: 150, fallbackOnBody: true,
         onEnd: (evt) => {
+            if (evt.to === listSubthemes) {
+                if (!selectedThemeId) return;
+                const movedItem = appData.splice(evt.oldIndex, 1)[0];
+                
+                // Prevent dragging a Theme into its own Subthemes list
+                if (movedItem.id === selectedThemeId) {
+                     appData.splice(evt.oldIndex, 0, movedItem);
+                     showToast('Não é possível mover um tema para dentro de si mesmo.', 'error');
+                     return;
+                }
+
+                const targetTheme = appData.find(t => t.id === selectedThemeId);
+                
+                const newSubtheme = {
+                    id: movedItem.id,
+                    name: movedItem.name,
+                    description: movedItem.description,
+                    services: []
+                };
+                
+                const subthemesToAppend = movedItem.subthemes || [];
+                targetTheme.subthemes.splice(evt.newIndex, 0, newSubtheme);
+                targetTheme.subthemes.push(...subthemesToAppend);
+
+                saveDataLocally();
+                if (selectedThemeId === movedItem.id) {
+                   selectedThemeId = targetTheme.id;
+                   selectedSubthemeId = null;
+                   selectedServiceId = null;
+                }
+                renderThemes();
+                renderSubthemes();
+                return;
+            }
+
             if (evt.oldIndex === evt.newIndex) return;
             const itemObj = appData.splice(evt.oldIndex, 1)[0];
             appData.splice(evt.newIndex, 0, itemObj);
@@ -406,12 +442,37 @@ function initSortables() {
     });
 
     new Sortable(listSubthemes, {
+        group: 'shared-levels',
         handle: '.drag-handle', animation: 150, fallbackOnBody: true,
         onEnd: (evt) => {
-            if (evt.oldIndex === evt.newIndex || !selectedThemeId) return;
-            const theme = appData.find(t => t.id === selectedThemeId);
-            const itemObj = theme.subthemes.splice(evt.oldIndex, 1)[0];
-            theme.subthemes.splice(evt.newIndex, 0, itemObj);
+            if (!selectedThemeId) return;
+            const sourceTheme = appData.find(t => t.id === selectedThemeId);
+
+            if (evt.to === listThemes) {
+                const movedSubtheme = sourceTheme.subthemes.splice(evt.oldIndex, 1)[0];
+                
+                const newTheme = {
+                    id: movedSubtheme.id,
+                    name: movedSubtheme.name,
+                    description: movedSubtheme.description,
+                    subthemes: []
+                };
+                
+                appData.splice(evt.newIndex, 0, newTheme);
+                saveDataLocally();
+                if (selectedSubthemeId === movedSubtheme.id) {
+                    selectedSubthemeId = null;
+                    selectedServiceId = null;
+                }
+                renderThemes();
+                renderSubthemes();
+                renderServices();
+                return;
+            }
+
+            if (evt.oldIndex === evt.newIndex) return;
+            const itemObj = sourceTheme.subthemes.splice(evt.oldIndex, 1)[0];
+            sourceTheme.subthemes.splice(evt.newIndex, 0, itemObj);
             saveDataLocally();
         }
     });
