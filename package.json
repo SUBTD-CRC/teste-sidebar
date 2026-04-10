@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "sortablejs": "^1.15.7",
+    "xlsx": "^0.18.5"
+  },
+  "name": "sidebar-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "vite": "^8.0.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

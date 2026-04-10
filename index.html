@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciador de Sidebar 1746</title>
+    <!-- Modern Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-brand">
+        <div class="brand-dots">
+            <div class="dot orange"></div>
+            <div class="dot orange"></div>
+        </div>
+        <h1>1746 Gestão de Sidebar</h1>
+      </div>
+      <div class="nav-actions">
+        <button id="import-excel-btn" class="btn btn-outline" style="color: #fff; border-color: rgba(255,255,255,0.3);">
+          <i class="fa-solid fa-file-import"></i> Importar Excel
+        </button>
+        <input type="file" id="excel-file-input" accept=".xlsx, .xls" style="display: none;" />
+        <button id="export-json-btn" class="btn btn-success">
+          <i class="fa-solid fa-file-excel"></i> Baixar Excel
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Columns Container -->
+      <div class="columns-container">
+          
+          <!-- Themes Column -->
+          <section class="sidebar-col dark-theme" id="col-themes">
+            <div class="col-header">
+                <h2>Temas</h2>
+                <button class="icon-btn" id="add-theme-btn" title="Adicionar Tema"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="tree-list" id="list-themes">
+                <div class="loading-state"><i class="fa-solid fa-spinner fa-spin"></i></div>
+            </div>
+          </section>
+
+          <!-- Subthemes Column -->
+          <section class="sidebar-col dark-theme hidden" id="col-subthemes">
+            <div class="col-header">
+                <h2>Subtemas</h2>
+                <button class="icon-btn" id="add-subtheme-btn" title="Adicionar Subtema"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="tree-list" id="list-subthemes"></div>
+          </section>
+
+          <!-- Services Column -->
+          <section class="sidebar-col dark-theme hidden" id="col-services">
+            <div class="col-header">
+                <h2>Serviços</h2>
+                <button class="icon-btn" id="add-service-btn" title="Adicionar Serviço"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="tree-list" id="list-services"></div>
+          </section>
+
+      </div>
+
+      <!-- Inspector / Editor Section -->
+      <section class="inspector-panel" id="inspector-panel">
+        <div class="empty-state" id="empty-state">
+          <i class="fa-solid fa-hand-pointer empty-icon"></i>
+          <h3>Selecione um item</h3>
+          <p>Clique em um Tema, Subtema ou Serviço nas colunas para editar suas propriedades.</p>
+        </div>
+
+        <div class="editor-content hidden" id="editor-content">
+            <div class="section-header">
+              <h2>Editar Propriedades</h2>
+              <span class="badge" id="inspector-type">Selecione um item</span>
+            </div>
+            
+            <form id="item-form" class="editor-form">
+              <div class="form-group">
+                <label for="item-name">Nome</label>
+                <input type="text" id="item-name" name="name" required placeholder="Ex: Transporte Público">
+              </div>
+              
+              <div class="form-group" id="description-group">
+                <label for="item-description">Descrição para o Cidadão (Opcional)</label>
+                <textarea id="item-description" name="description" rows="3" placeholder="Sua descrição vai ajudar o cidadão a entender este serviço/tema..."></textarea>
+                <span class="help-text">Uma ou duas frases curtas para explicar este tópico.</span>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary" id="save-item-btn">Salvar Alterações</button>
+                <button type="button" class="btn btn-danger" id="delete-item-btn">Excluir Item</button>
+              </div>
+            </form>
+        </div>
+      </section>
+      
+    </main>
+
+    <!-- Notification system -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Modals -->
+    <dialog id="add-modal" class="modal">
+      <div class="modal-content light-modal">
+        <div class="modal-header">
+          <h2 id="modal-title">Adicionar Novo Item</h2>
+          <button class="close-btn" id="close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <form id="add-form">
+          <input type="hidden" id="add-type" name="type">
+          <div class="form-group">
+            <label for="new-item-name">Nome</label>
+            <input type="text" id="new-item-name" name="name" required placeholder="Nome do item">
+          </div>
+          <div class="form-group" id="new-item-desc-group">
+            <label for="new-item-description">Descrição</label>
+            <textarea id="new-item-description" name="description" rows="2" placeholder="Descrição opcional"></textarea>
+          </div>
+          <div class="modal-actions">
+            <button type="button" class="btn btn-outline dark-text" id="cancel-modal-btn">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Adicionar</button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
