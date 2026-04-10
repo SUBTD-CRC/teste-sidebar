@@ -111,7 +111,7 @@ async function loadData() {
     }
 
     try {
-        const response = await fetch('/initial_data.json');
+        const response = await fetch('./initial_data.json');
         if (!response.ok) throw new Error('Failed to fetch default JSON');
         appData = await response.json();
     } catch (e) {
