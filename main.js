@@ -6,7 +6,7 @@ let appData = [];
 let selectedThemeId = null;
 let selectedSubthemeId = null;
 let selectedServiceId = null;
-let activeEditorId = null; 
+let activeEditorId = null;
 let activeEditorType = null; // 'theme', 'subtheme', 'service'
 
 // DOM Elements
@@ -26,6 +26,9 @@ const inspectorTypeBadge = document.getElementById('inspector-type');
 const toastContainer = document.getElementById('toast-container');
 const descriptionGroup = document.getElementById('description-group');
 const excelFileInput = document.getElementById('excel-file-input');
+
+const aiGenerateEditBtn = document.getElementById('ai-generate-edit-btn');
+const aiGenerateAddBtn = document.getElementById('ai-generate-add-btn');
 
 // Context Actions
 const deleteItemBtn = document.getElementById('delete-item-btn');
@@ -93,6 +96,50 @@ const sanitizeHTML = (str) => {
     return temp.innerHTML;
 };
 
+// Gemini API Integration
+async function generateDescriptionWithGemini(type, itemName, parentName = '') {
+    const apiKey = import.meta.env?.VITE_GEMINI_API_KEY;
+    if (!apiKey) {
+        showToast('Chave da API do Gemini ausente no .env', 'error');
+        return '';
+    }
+
+    const promptContext = type === 'theme' ? `Tema principal: ${itemName}` : `Tema principal: ${parentName}\nSubtema: ${itemName}`;
+    const promptText = `Atue como um redator especialista em serviços públicos municipais. Sua tarefa é criar uma descrição extremamente objetiva para temas e subtemas do portal de atendimento 1746 da prefeitura.
+
+Regras estritas:
+1. Use uma linguagem simples e direta, acessível a qualquer cidadão.
+2. Escreva exata e unicamente UMA frase curta.
+3. Não use verbos no imperativo ou ação (ex: evite "Peça", "Solicite", "Informe"). Inicie a frase dando foco ao "quê" usando substantivos (ex: "Canal para requerimentos de...", "Área destinada à resolução de...").
+4. Apenas retorne o texto final da descrição. Nunca inclua aspas, introduções ("Aqui está:"), rótulos (como "Tema:" ou "Descrição:") ou quebras de linha.
+
+Contexto a ser descrito:
+${promptContext}`;
+
+    try {
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                contents: [{ parts: [{ text: promptText }] }]
+            })
+        });
+
+        if (!response.ok) {
+            const errData = await response.json().catch(() => ({}));
+            throw new Error(errData.error?.message || `HTTP error ${response.status}`);
+        }
+        const data = await response.json();
+
+        let generatedText = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+        return generatedText.trim();
+    } catch (e) {
+        console.error(e);
+        showToast(`Erro IA: ${e.message}`, 'error');
+        return '';
+    }
+}
+
 // Data Management
 function saveDataLocally() {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(appData));
@@ -117,7 +164,7 @@ async function loadData() {
     } catch (e) {
         appData = [];
     }
-    
+
     normalizeData(appData);
     saveDataLocally();
     renderThemes();
@@ -125,16 +172,16 @@ async function loadData() {
 
 function normalizeData(data) {
     data.forEach(t => {
-        if(!t.id) t.id = generateId();
-        if(!t.description) t.description = "";
-        if(!t.subthemes) t.subthemes = [];
+        if (!t.id) t.id = generateId();
+        if (!t.description) t.description = "";
+        if (!t.subthemes) t.subthemes = [];
         t.subthemes.forEach(s => {
-            if(!s.id) s.id = generateId();
-            if(!s.description) s.description = "";
-            if(!s.services) s.services = [];
+            if (!s.id) s.id = generateId();
+            if (!s.description) s.description = "";
+            if (!s.services) s.services = [];
             s.services.forEach(srv => {
-                if(!srv.id) srv.id = generateId();
-                if(!srv.description) srv.description = "";
+                if (!srv.id) srv.id = generateId();
+                if (!srv.description) srv.description = "";
             });
         });
     });
@@ -163,7 +210,7 @@ function renderThemes() {
     appData.forEach(item => {
         listThemes.insertAdjacentHTML('beforeend', createItemHTML(item, 'theme', item.id === selectedThemeId));
     });
-    
+
     // Bind click events
     listThemes.querySelectorAll('.list-item').forEach(el => {
         el.addEventListener('click', (e) => {
@@ -235,7 +282,7 @@ function renderServices() {
 function openEditor(id, type) {
     activeEditorId = id;
     activeEditorType = type;
-    
+
     emptyState.classList.add('hidden');
     editorContent.classList.remove('hidden');
 
@@ -289,7 +336,7 @@ itemForm.addEventListener('submit', (e) => {
 
     saveDataLocally();
     showToast('Atualizado com sucesso!', 'success');
-    
+
     // Refresh view
     if (activeEditorType === 'theme') renderThemes();
     if (activeEditorType === 'subtheme') renderSubthemes();
@@ -318,13 +365,67 @@ deleteItemBtn.addEventListener('click', () => {
 
     saveDataLocally();
     showToast('Item excluído', 'info');
-    
+
     emptyState.classList.remove('hidden');
     editorContent.classList.add('hidden');
-    
+
     renderThemes();
     renderSubthemes();
     renderServices();
+});
+
+// AI Generation Listeners
+aiGenerateEditBtn.addEventListener('click', async () => {
+    if (activeEditorType === 'service' || !activeEditorId) return;
+
+    let itemName = itemNameInput.value.trim();
+    if (!itemName) return showToast('Preencha o nome do item primeiro', 'error');
+
+    let parentName = '';
+    if (activeEditorType === 'subtheme') {
+        const t = appData.find(t => t.id === selectedThemeId);
+        if (t) parentName = t.name;
+    }
+
+    aiGenerateEditBtn.disabled = true;
+    const oldIcon = aiGenerateEditBtn.innerHTML;
+    aiGenerateEditBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
+
+    const desc = await generateDescriptionWithGemini(activeEditorType === 'theme' ? 'theme' : 'subtheme', itemName, parentName);
+    if (desc) {
+        itemDescInput.value = desc;
+        showToast('Descrição gerada pela IA!', 'success');
+    }
+
+    aiGenerateEditBtn.innerHTML = oldIcon;
+    aiGenerateEditBtn.disabled = false;
+});
+
+aiGenerateAddBtn.addEventListener('click', async () => {
+    const type = addTypeInput.value;
+    if (type === 'service') return;
+
+    let itemName = document.getElementById('new-item-name').value.trim();
+    if (!itemName) return showToast('Preencha o nome do item primeiro', 'error');
+
+    let parentName = '';
+    if (type === 'subtheme') {
+        const t = appData.find(t => t.id === selectedThemeId);
+        if (t) parentName = t.name;
+    }
+
+    aiGenerateAddBtn.disabled = true;
+    const oldIcon = aiGenerateAddBtn.innerHTML;
+    aiGenerateAddBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
+
+    const desc = await generateDescriptionWithGemini(type, itemName, parentName);
+    if (desc) {
+        document.getElementById('new-item-description').value = desc;
+        showToast('Descrição gerada pela IA!', 'success');
+    }
+
+    aiGenerateAddBtn.innerHTML = oldIcon;
+    aiGenerateAddBtn.disabled = false;
 });
 
 // Adding new elements
@@ -332,11 +433,11 @@ document.getElementById('add-theme-btn').addEventListener('click', () => {
     openAddModal('theme');
 });
 document.getElementById('add-subtheme-btn').addEventListener('click', () => {
-    if(!selectedThemeId) return;
+    if (!selectedThemeId) return;
     openAddModal('subtheme');
 });
 document.getElementById('add-service-btn').addEventListener('click', () => {
-    if(!selectedSubthemeId) return;
+    if (!selectedSubthemeId) return;
     openAddModal('service');
 });
 
@@ -352,23 +453,43 @@ function openAddModal(type) {
 document.getElementById('close-modal-btn').addEventListener('click', () => addModal.close());
 document.getElementById('cancel-modal-btn').addEventListener('click', () => addModal.close());
 
-addForm.addEventListener('submit', (e) => {
+addForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const type = addTypeInput.value;
-    
+
     const newItem = {
         id: generateId(),
         name: document.getElementById('new-item-name').value.trim(),
     };
 
     if (type !== 'service') {
-        newItem.description = document.getElementById('new-item-description').value.trim();
+        let desc = document.getElementById('new-item-description').value.trim();
+
+        // Auto-generate se estiver vazio
+        if (!desc) {
+            const submitBtn = addForm.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Gerando IA...';
+
+            let parentName = '';
+            if (type === 'subtheme') {
+                const t = appData.find(t => t.id === selectedThemeId);
+                if (t) parentName = t.name;
+            }
+
+            desc = await generateDescriptionWithGemini(type === 'theme' ? 'theme' : 'subtheme', newItem.name, parentName);
+
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = 'Adicionar';
+        }
+
+        newItem.description = desc;
     }
-    
+
     if (type === 'theme') {
         newItem.subthemes = [];
         appData.push(newItem);
-        selectedThemeId = newItem.id; 
+        selectedThemeId = newItem.id;
     } else if (type === 'subtheme') {
         newItem.services = [];
         const t = appData.find(t => t.id === selectedThemeId);
@@ -384,11 +505,11 @@ addForm.addEventListener('submit', (e) => {
     saveDataLocally();
     addModal.close();
     showToast(`${type} adicionado!`, 'success');
-    
+
     renderThemes();
-    if(type === 'subtheme' || type === 'service') renderSubthemes();
-    if(type === 'service') renderServices();
-    
+    if (type === 'subtheme' || type === 'service') renderSubthemes();
+    if (type === 'service') renderServices();
+
     // Automatically open editor for new item
     openEditor(newItem.id, type);
 });
@@ -402,32 +523,32 @@ function initSortables() {
             if (evt.to === listSubthemes) {
                 if (!selectedThemeId) return;
                 const movedItem = appData.splice(evt.oldIndex, 1)[0];
-                
+
                 // Prevent dragging a Theme into its own Subthemes list
                 if (movedItem.id === selectedThemeId) {
-                     appData.splice(evt.oldIndex, 0, movedItem);
-                     showToast('Não é possível mover um tema para dentro de si mesmo.', 'error');
-                     return;
+                    appData.splice(evt.oldIndex, 0, movedItem);
+                    showToast('Não é possível mover um tema para dentro de si mesmo.', 'error');
+                    return;
                 }
 
                 const targetTheme = appData.find(t => t.id === selectedThemeId);
-                
+
                 const newSubtheme = {
                     id: movedItem.id,
                     name: movedItem.name,
                     description: movedItem.description,
                     services: []
                 };
-                
+
                 const subthemesToAppend = movedItem.subthemes || [];
                 targetTheme.subthemes.splice(evt.newIndex, 0, newSubtheme);
                 targetTheme.subthemes.push(...subthemesToAppend);
 
                 saveDataLocally();
                 if (selectedThemeId === movedItem.id) {
-                   selectedThemeId = targetTheme.id;
-                   selectedSubthemeId = null;
-                   selectedServiceId = null;
+                    selectedThemeId = targetTheme.id;
+                    selectedSubthemeId = null;
+                    selectedServiceId = null;
                 }
                 renderThemes();
                 renderSubthemes();
@@ -450,14 +571,14 @@ function initSortables() {
 
             if (evt.to === listThemes) {
                 const movedSubtheme = sourceTheme.subthemes.splice(evt.oldIndex, 1)[0];
-                
+
                 const newTheme = {
                     id: movedSubtheme.id,
                     name: movedSubtheme.name,
                     description: movedSubtheme.description,
                     subthemes: []
                 };
-                
+
                 appData.splice(evt.newIndex, 0, newTheme);
                 saveDataLocally();
                 if (selectedSubthemeId === movedSubtheme.id) {
@@ -512,7 +633,7 @@ document.getElementById('export-json-btn').addEventListener('click', () => {
         } else {
             t.subthemes.forEach(s => {
                 let servicesStr = (s.services || []).map(srv => srv.name).join(', ');
-                flatData.push({ 'Tema': t.name, 'Descrição do Tema': t.description,  'Subtema': s.name, 'Descrição do Subtema': s.description, 'Serviços': servicesStr });
+                flatData.push({ 'Tema': t.name, 'Descrição do Tema': t.description, 'Subtema': s.name, 'Descrição do Subtema': s.description, 'Serviços': servicesStr });
             });
         }
     });
@@ -522,6 +643,24 @@ document.getElementById('export-json-btn').addEventListener('click', () => {
     XLSX.utils.book_append_sheet(workbook, worksheet, "Sidebar");
     XLSX.writeFile(workbook, "1746_sidebar_config.xlsx");
     showToast('Download do Excel iniciado', 'success');
+});
+
+// Reset Data
+document.getElementById('reset-data-btn').addEventListener('click', async () => {
+    if (confirm("Tem certeza que deseja apagar todas as alterações e retornar aos dados iniciais padrão? Esta ação não pode ser desfeita.")) {
+        localStorage.removeItem(LOCAL_STORAGE_KEY);
+
+        selectedThemeId = null;
+        selectedSubthemeId = null;
+        selectedServiceId = null;
+        colSubthemes.classList.add('hidden');
+        colServices.classList.add('hidden');
+        emptyState.classList.remove('hidden');
+        editorContent.classList.add('hidden');
+
+        await loadData();
+        showToast('Dados restaurados para o padrão inicial!', 'success');
+    }
 });
 
 // Import Data (Excel)
@@ -534,15 +673,15 @@ excelFileInput.addEventListener('change', (e) => {
     if (!file) return;
 
     const reader = new FileReader();
-    reader.onload = function(e) {
+    reader.onload = function (e) {
         const data = new Uint8Array(e.target.result);
         try {
-            const workbook = XLSX.read(data, {type: 'array'});
+            const workbook = XLSX.read(data, { type: 'array' });
             const firstSheet = workbook.Sheets[workbook.SheetNames[0]];
             const jsonData = XLSX.utils.sheet_to_json(firstSheet);
             parseFlatExcelToHierarchy(jsonData);
             e.target.value = ''; // reset file input
-        } catch(err) {
+        } catch (err) {
             showToast('Erro ao ler arquivo Excel.', 'error');
             console.error(err);
         }
@@ -568,10 +707,10 @@ function parseFlatExcelToHierarchy(flatJson) {
             themeMap.set(themeName, newTheme);
             newHierarchy.push(newTheme);
         }
-        
+
         const themeRef = themeMap.get(themeName);
         const subName = (row['Subtema'] || '').trim();
-        
+
         if (subName) {
             let subRef = themeRef.subthemes.find(s => s.name === subName);
             if (!subRef) {
@@ -583,7 +722,7 @@ function parseFlatExcelToHierarchy(flatJson) {
                 };
                 themeRef.subthemes.push(subRef);
             }
-            
+
             const servicesStr = row['Serviços'] || '';
             if (servicesStr) {
                 const srvArr = servicesStr.split(',').map(s => s.trim()).filter(s => s);
@@ -598,7 +737,7 @@ function parseFlatExcelToHierarchy(flatJson) {
 
     appData = newHierarchy;
     saveDataLocally();
-    
+
     // reset UI
     selectedThemeId = null;
     selectedSubthemeId = null;
@@ -607,7 +746,7 @@ function parseFlatExcelToHierarchy(flatJson) {
     colServices.classList.add('hidden');
     emptyState.classList.remove('hidden');
     editorContent.classList.add('hidden');
-    
+
     renderThemes();
     showToast('Backup Excel restaurado com sucesso!', 'success');
 }

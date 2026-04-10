@@ -2,12 +2,12 @@
   {
     "id": "Administração pública",
     "name": "Administração pública",
-    "description": "Serviços relacionados à gestão interna e solicitações para servidores.",
+    "description": "Gestão dos assuntos e serviços da cidade.",
     "subthemes": [
       {
         "id": "Saúde do servidor",
         "name": "Saúde do servidor",
-        "description": "Encontre opções, serviços e emissões relacionadas a saúde do servidor para o cidadão.",
+        "description": "Cuidados com a saúde dos funcionários municipais.",
         "services": [
           {
             "id": "licença médica",
@@ -26,7 +26,7 @@
       {
         "id": "Solicitações do servidor",
         "name": "Solicitações do servidor",
-        "description": "Encontre opções, serviços e emissões relacionadas a solicitações do servidor para o cidadão.",
+        "description": "Pedidos e requerimentos dos funcionários públicos.",
         "services": [
           {
             "id": "Revisão de FGTS celetista",
@@ -49,13 +49,13 @@
       {
         "id": "Consulta a processos",
         "name": "Consulta a processos",
-        "description": "Encontre opções, serviços e emissões relacionadas a consulta a processos para o cidadão.",
+        "description": "Acesso ao andamento de processos administrativos.",
         "services": []
       },
       {
         "id": "Benefícios",
         "name": "Benefícios",
-        "description": "Encontre opções, serviços e emissões relacionadas a benefícios para o cidadão.",
+        "description": "Vantagens e auxílios para os servidores municipais.",
         "services": [
           {
             "id": "auxílio creche",
@@ -70,13 +70,13 @@
       {
         "id": "Concursos e Processos seletivos",
         "name": "Concursos e Processos seletivos",
-        "description": "Encontre opções, serviços e emissões relacionadas a concursos e processos seletivos para o cidadão.",
+        "description": "Oportunidades de ingresso no serviço público municipal.",
         "services": []
       },
       {
         "id": "Previdência do servidor",
         "name": "Previdência do servidor",
-        "description": "Encontre opções, serviços e emissões relacionadas a previdência do servidor para o cidadão.",
+        "description": "Regime de aposentadoria e pensões para funcionários.",
         "services": [
           {
             "id": "Pensão por morte",
@@ -95,7 +95,7 @@
       {
         "id": "Licitação e Pregão",
         "name": "Licitação e Pregão",
-        "description": "Encontre opções, serviços e emissões relacionadas a licitação e pregão para o cidadão.",
+        "description": "Procedimentos para contratação de bens e serviços pelo município.",
         "services": [
           {
             "id": "Informações sobre licitação e pregão",
@@ -106,7 +106,7 @@
       {
         "id": "Permissão de publicidades",
         "name": "Permissão de publicidades",
-        "description": "Encontre opções, serviços e emissões relacionadas a permissão de publicidades para o cidadão.",
+        "description": "Autorização para exibir publicidade na cidade.",
         "services": [
           {
             "id": "autorização para publicidade",
@@ -117,13 +117,13 @@
       {
         "id": "Irregularidades em empresas terceirizadas",
         "name": "Irregularidades em empresas terceirizadas",
-        "description": "Encontre opções, serviços e emissões relacionadas a irregularidades em empresas terceirizadas para o cidadão.",
+        "description": "Denúncias sobre falhas em serviços de empresas contratadas.",
         "services": []
       },
       {
         "id": "Emprego formal",
         "name": "Emprego formal",
-        "description": "Encontre opções, serviços e emissões relacionadas a emprego formal para o cidadão.",
+        "description": "Informações sobre vagas e direitos trabalhistas formais.",
         "services": [
           {
             "id": "carteira de trabalho",
@@ -142,7 +142,7 @@
       {
         "id": "Estágio",
         "name": "Estágio",
-        "description": "Encontre opções, serviços e emissões relacionadas a estágio para o cidadão.",
+        "description": "Programas de experiência profissional para estudantes.",
         "services": [
           {
             "id": "estágio na prefeitura...",
@@ -153,7 +153,7 @@
       {
         "id": "Empreendedorismo",
         "name": "Empreendedorismo",
-        "description": "Encontre opções, serviços e emissões relacionadas a empreendedorismo para o cidadão.",
+        "description": "Apoio e incentivo a novas iniciativas de negócios.",
         "services": [
           {
             "id": "programa empreenda rio...",
@@ -166,12 +166,12 @@
   {
     "id": "Animais",
     "name": "Animais",
-    "description": "Ações voltadas à saúde, adoção e resgate de animais do município.",
+    "description": "Serviços e informações sobre bichos na cidade.",
     "subthemes": [
       {
         "id": "Saúde animal",
         "name": "Saúde animal",
-        "description": "Encontre opções, serviços e emissões relacionadas a saúde animal para o cidadão.",
+        "description": "Cuidados veterinários e bem-estar dos animais.",
         "services": [
           {
             "id": "Exames",
@@ -194,7 +194,7 @@
       {
         "id": "Proteção aos animais",
         "name": "Proteção aos animais",
-        "description": "Encontre opções, serviços e emissões relacionadas a proteção aos animais para o cidadão.",
+        "description": "Medidas de defesa e segurança para os animais.",
         "services": [
           {
             "id": "animal encontrado na via",
@@ -223,12 +223,12 @@
   {
     "id": "Cidadania",
     "name": "Cidadania",
-    "description": "Programas sociais, direitos humanos, acessibilidade e assistência voltada ao cidadão carioca.",
+    "description": "Direitos e deveres dos habitantes da cidade.",
     "subthemes": [
       {
         "id": "Assistência social",
         "name": "Assistência social",
-        "description": "Encontre opções, serviços e emissões relacionadas a assistência social para o cidadão.",
+        "description": "Apoio a pessoas em situação de vulnerabilidade social.",
         "services": [
           {
             "id": "Acolhimento",
@@ -251,7 +251,7 @@
       {
         "id": "Acessibilidade",
         "name": "Acessibilidade",
-        "description": "Encontre opções, serviços e emissões relacionadas a acessibilidade para o cidadão.",
+        "description": "Facilidades para todos, incluindo pessoas com deficiência.",
         "services": [
           {
             "id": "Inclusão de PCDs no mercado de trabalho",
@@ -262,7 +262,7 @@
       {
         "id": "Direitos Humanos",
         "name": "Direitos Humanos",
-        "description": "Encontre opções, serviços e emissões relacionadas a direitos humanos para o cidadão.",
+        "description": "Garantia da dignidade e igualdade para todos.",
         "services": [
           {
             "id": "Casos de intolerância religiosa",
@@ -277,7 +277,7 @@
       {
         "id": "Mulher carioca",
         "name": "Mulher carioca",
-        "description": "Encontre opções, serviços e emissões relacionadas a mulher carioca para o cidadão.",
+        "description": "Serviços e direitos específicos para as mulheres da cidade.",
         "services": [
           {
             "id": "Casas da Mulher",
@@ -292,13 +292,13 @@
       {
         "id": "PROCON carioca",
         "name": "PROCON carioca",
-        "description": "Encontre opções, serviços e emissões relacionadas a procon carioca para o cidadão.",
+        "description": "Defesa dos direitos dos consumidores na cidade.",
         "services": []
       },
       {
         "id": "Participação social",
         "name": "Participação social",
-        "description": "Encontre opções, serviços e emissões relacionadas a participação social para o cidadão.",
+        "description": "Envolvimento da população nas decisões da cidade.",
         "services": [
           {
             "id": "Participa.rio",
@@ -311,12 +311,12 @@
   {
     "id": "Cultura, Esporte e Lazer",
     "name": "Cultura, Esporte e Lazer",
-    "description": "Acesso a espaços culturais, atividades físicas, eventos e fomento artístico.",
+    "description": "Atividades e eventos de arte, esportes e diversão.",
     "subthemes": [
       {
         "id": "Atividade física",
         "name": "Atividade física",
-        "description": "Encontre opções, serviços e emissões relacionadas a atividade física para o cidadão.",
+        "description": "Programas e locais para a prática de exercícios.",
         "services": [
           {
             "id": "Academias da terceira idade",
@@ -335,7 +335,7 @@
       {
         "id": "Audiovisual",
         "name": "Audiovisual",
-        "description": "Encontre opções, serviços e emissões relacionadas a audiovisual para o cidadão.",
+        "description": "Produção e exibição de filmes, vídeos e mídias.",
         "services": [
           {
             "id": "subtipos riofilme",
@@ -346,7 +346,7 @@
       {
         "id": "Incentivo cultural",
         "name": "Incentivo cultural",
-        "description": "Encontre opções, serviços e emissões relacionadas a incentivo cultural para o cidadão.",
+        "description": "Apoio a projetos e eventos de cultura.",
         "services": [
           {
             "id": "redes de roda de samba",
@@ -369,7 +369,7 @@
       {
         "id": "Espaços culturais",
         "name": "Espaços culturais",
-        "description": "Encontre opções, serviços e emissões relacionadas a espaços culturais para o cidadão.",
+        "description": "Locais para eventos de arte, shows e exposições.",
         "services": [
           {
             "id": "Cidade das Artes",
@@ -410,12 +410,12 @@
   {
     "id": "Cursos",
     "name": "Cursos",
-    "description": "Oportunidades de aprendizado, capacitação e naves do conhecimento disponíveis para a população.",
+    "description": "Oportunidades de aprendizado e qualificação profissional.",
     "subthemes": [
       {
         "id": "Oportunidades Cariocas (land page)",
         "name": "Oportunidades Cariocas (land page)",
-        "description": "Encontre opções, serviços e emissões relacionadas a oportunidades cariocas (land page) para o cidadão.",
+        "description": "Plataforma de cursos e vagas para moradores do Rio.",
         "services": []
       }
     ]
@@ -423,12 +423,12 @@
   {
     "id": "Educação",
     "name": "Educação",
-    "description": "Informações sobre vida escolar, matrículas, ensino infantil, fundamental, e segurança nas escolas.",
+    "description": "Ensino e aprendizado nas escolas municipais.",
     "subthemes": [
       {
         "id": "Vida escolar",
         "name": "Vida escolar",
-        "description": "Encontre opções, serviços e emissões relacionadas a vida escolar para o cidadão.",
+        "description": "Informações sobre o dia a dia de alunos e escolas.",
         "services": [
           {
             "id": "Calendário escolar",
@@ -455,7 +455,7 @@
       {
         "id": "MultiRio",
         "name": "MultiRio",
-        "description": "Encontre opções, serviços e emissões relacionadas a multirio para o cidadão.",
+        "description": "Conteúdos educativos e culturais para a rede municipal.",
         "services": [
           {
             "id": "subtipos multirio",
@@ -466,7 +466,7 @@
       {
         "id": "Educação Infantil",
         "name": "Educação Infantil",
-        "description": "Encontre opções, serviços e emissões relacionadas a educação infantil para o cidadão.",
+        "description": "Ensino para crianças de 0 a 5 anos de idade.",
         "services": [
           {
             "id": "creches parceiras",
@@ -481,7 +481,7 @@
       {
         "id": "Ensino Fundamental e Médio",
         "name": "Ensino Fundamental e Médio",
-        "description": "Encontre opções, serviços e emissões relacionadas a ensino fundamental e médio para o cidadão.",
+        "description": "Etapas de ensino para crianças e adolescentes.",
         "services": [
           {
             "id": "ensino domiciliar",
@@ -504,7 +504,7 @@
       {
         "id": "Educação Especial",
         "name": "Educação Especial",
-        "description": "Encontre opções, serviços e emissões relacionadas a educação especial para o cidadão.",
+        "description": "Suporte e recursos para estudantes com necessidades educacionais específicas.",
         "services": [
           {
             "id": "inclusão de aluno especial",
@@ -519,7 +519,7 @@
       {
         "id": "Bibliotecas",
         "name": "Bibliotecas",
-        "description": "Encontre opções, serviços e emissões relacionadas a bibliotecas para o cidadão.",
+        "description": "Locais de acesso a livros, leitura e cultura para todos.",
         "services": [
           {
             "id": "doação de livros",
@@ -534,7 +534,7 @@
       {
         "id": "Martrícula escolar",
         "name": "Martrícula escolar",
-        "description": "Encontre opções, serviços e emissões relacionadas a martrícula escolar para o cidadão.",
+        "description": "Inscrição de estudantes em escolas da rede municipal.",
         "services": [
           {
             "id": "matrícula 2027",
@@ -545,13 +545,13 @@
       {
         "id": "Segurança escolar",
         "name": "Segurança escolar",
-        "description": "Encontre opções, serviços e emissões relacionadas a segurança escolar para o cidadão.",
+        "description": "Medidas de proteção e bem-estar para alunos e funcionários nas escolas.",
         "services": []
       },
       {
         "id": "Cursos",
         "name": "Cursos",
-        "description": "Encontre opções, serviços e emissões relacionadas a cursos para o cidadão.",
+        "description": "Oferta de aulas e treinamentos em diversas áreas do conhecimento.",
         "services": [
           {
             "id": "Naves do conhecimento",
@@ -576,12 +576,12 @@
   {
     "id": "Imóveis",
     "name": "Imóveis",
-    "description": "Assuntos sobre IPTU, certidões, licenças urbanísticas, e fiscalização de imóveis.",
+    "description": "Assuntos relacionados a propriedades urbanas e rurais no município.",
     "subthemes": [
       {
         "id": "IPTU",
         "name": "IPTU",
-        "description": "Encontre opções, serviços e emissões relacionadas a iptu para o cidadão.",
+        "description": "Imposto Predial e Territorial Urbano sobre propriedades.",
         "services": [
           {
             "id": "tudo relacionado a IPTU",
@@ -592,7 +592,7 @@
       {
         "id": "ITBI",
         "name": "ITBI",
-        "description": "Encontre opções, serviços e emissões relacionadas a itbi para o cidadão.",
+        "description": "Imposto sobre a Transmissão de Bens Imóveis na compra e venda.",
         "services": [
           {
             "id": "tudo relacionado a ITBI",
@@ -603,7 +603,7 @@
       {
         "id": "Leilão",
         "name": "Leilão",
-        "description": "Encontre opções, serviços e emissões relacionadas a leilão para o cidadão.",
+        "description": "Venda pública de bens imóveis, muitas vezes por dívidas.",
         "services": [
           {
             "id": "imóvel leiloado...",
@@ -614,13 +614,13 @@
       {
         "id": "Imóveis protegidos",
         "name": "Imóveis protegidos",
-        "description": "Encontre opções, serviços e emissões relacionadas a imóveis protegidos para o cidadão.",
+        "description": "Propriedades com valor histórico ou cultural sob proteção especial.",
         "services": []
       },
       {
         "id": "Certidões e Documentos",
         "name": "Certidões e Documentos",
-        "description": "Encontre opções, serviços e emissões relacionadas a certidões e documentos para o cidadão.",
+        "description": "Emissão de comprovantes e papéis oficiais sobre propriedades.",
         "services": [
           {
             "id": "Habite-se",
@@ -635,7 +635,7 @@
       {
         "id": "Fiscalização de imóveis",
         "name": "Fiscalização de imóveis",
-        "description": "Encontre opções, serviços e emissões relacionadas a fiscalização de imóveis para o cidadão.",
+        "description": "Verificação do cumprimento de regras e normas para construções e uso.",
         "services": [
           {
             "id": "obras irregulares...",
@@ -646,13 +646,13 @@
       {
         "id": "Usucapião",
         "name": "Usucapião",
-        "description": "Encontre opções, serviços e emissões relacionadas a usucapião para o cidadão.",
+        "description": "Regularização da posse de um imóvel por uso prolongado.",
         "services": []
       },
       {
         "id": "Licenças urbanísticas",
         "name": "Licenças urbanísticas",
-        "description": "Encontre opções, serviços e emissões relacionadas a licenças urbanísticas para o cidadão.",
+        "description": "Permissões para obras, construções e reformas na cidade.",
         "services": [
           {
             "id": "Projetos",
@@ -665,18 +665,18 @@
   {
     "id": "Meio Ambiente",
     "name": "Meio Ambiente",
-    "description": "Ações de sustentabilidade, preservação de parques, fiscalização ambiental e arborização urbana.",
+    "description": "Assuntos sobre a natureza, parques, poluição e sustentabilidade na cidade.",
     "subthemes": [
       {
         "id": "Licenças ambientais",
         "name": "Licenças ambientais",
-        "description": "Encontre opções, serviços e emissões relacionadas a licenças ambientais para o cidadão.",
+        "description": "Autorizações para atividades com impacto no meio ambiente.",
         "services": []
       },
       {
         "id": "Poluição urbana",
         "name": "Poluição urbana",
-        "description": "Encontre opções, serviços e emissões relacionadas a poluição urbana para o cidadão.",
+        "description": "Controle e combate à contaminação do ar, água e solo na cidade.",
         "services": [
           {
             "id": "poluição do ar",
@@ -699,7 +699,7 @@
       {
         "id": "Desmatamento",
         "name": "Desmatamento",
-        "description": "Encontre opções, serviços e emissões relacionadas a desmatamento para o cidadão.",
+        "description": "Combate à derrubada ilegal de árvores e vegetação.",
         "services": [
           {
             "id": "queimadas",
@@ -714,7 +714,7 @@
       {
         "id": "Arborização",
         "name": "Arborização",
-        "description": "Encontre opções, serviços e emissões relacionadas a arborização para o cidadão.",
+        "description": "Plantio, poda e cuidado com as árvores nas ruas e áreas verdes.",
         "services": [
           {
             "id": "Adote.Rio",
@@ -729,7 +729,7 @@
       {
         "id": "Parques",
         "name": "Parques",
-        "description": "Encontre opções, serviços e emissões relacionadas a parques para o cidadão.",
+        "description": "Áreas verdes de lazer, conservação e contato com a natureza.",
         "services": [
           {
             "id": "Parque Nacional da Tijuca",
@@ -748,7 +748,7 @@
       {
         "id": "Fiscalização ambiental",
         "name": "Fiscalização ambiental",
-        "description": "Encontre opções, serviços e emissões relacionadas a fiscalização ambiental para o cidadão.",
+        "description": "Verificação do cumprimento de leis e normas de proteção ambiental.",
         "services": [
           {
             "id": "captação irregular de água",
@@ -771,7 +771,7 @@
       {
         "id": "Educação Ambiental",
         "name": "Educação Ambiental",
-        "description": "Encontre opções, serviços e emissões relacionadas a educação ambiental para o cidadão.",
+        "description": "Informações e atividades para a conscientização sobre o meio ambiente.",
         "services": [
           {
             "id": "reciclagem",
@@ -786,7 +786,7 @@
       {
         "id": "Certificados",
         "name": "Certificados",
-        "description": "Encontre opções, serviços e emissões relacionadas a certificados para o cidadão.",
+        "description": "Emissão de documentos que atestam conformidade ambiental.",
         "services": [
           {
             "id": "Certificado de adequação de imóveis...",
@@ -799,18 +799,18 @@
   {
     "id": "Saúde",
     "name": "Saúde",
-    "description": "Atendimento em hospitais, clínicas da família, vacinação, vigilância sanitária e medicamentos.",
+    "description": "Serviços e informações sobre o bem-estar e atendimento médico para a população.",
     "subthemes": [
       {
         "id": "Licenças sanitárias",
         "name": "Licenças sanitárias",
-        "description": "Encontre opções, serviços e emissões relacionadas a licenças sanitárias para o cidadão.",
+        "description": "Permissões para estabelecimentos que lidam com saúde e alimentos.",
         "services": []
       },
       {
         "id": "Atendimento hospitalar / Hospitais",
         "name": "Atendimento hospitalar / Hospitais",
-        "description": "Encontre opções, serviços e emissões relacionadas a atendimento hospitalar / hospitais para o cidadão.",
+        "description": "Cuidados médicos para internações e casos complexos em hospitais.",
         "services": [
           {
             "id": "Hospitais...",
@@ -821,7 +821,7 @@
       {
         "id": "Emergência / UPAs e Centros de Emergência",
         "name": "Emergência / UPAs e Centros de Emergência",
-        "description": "Encontre opções, serviços e emissões relacionadas a emergência / upas e centros de emergência para o cidadão.",
+        "description": "Atendimento rápido para casos urgentes e acidentes.",
         "services": [
           {
             "id": "UPA",
@@ -836,7 +836,7 @@
       {
         "id": "Atendimento ambulatorial / Consultas e exames / Clínicas da Família e Postos de Saúde",
         "name": "Atendimento ambulatorial / Consultas e exames / Clínicas da Família e Postos de Saúde",
-        "description": "Encontre opções, serviços e emissões relacionadas a atendimento ambulatorial / consultas e exames / clínicas da família e postos de saúde para o cidadão.",
+        "description": "Consultas médicas, exames e acompanhamento em clínicas e postos de saúde.",
         "services": [
           {
             "id": "CF e POSTOS DE SAÚDE",
@@ -847,19 +847,19 @@
       {
         "id": "Auxílios em saúde",
         "name": "Auxílios em saúde",
-        "description": "Encontre opções, serviços e emissões relacionadas a auxílios em saúde para o cidadão.",
+        "description": "Suportes e benefícios para pessoas com necessidades específicas de saúde.",
         "services": []
       },
       {
         "id": "Vacinação",
         "name": "Vacinação",
-        "description": "Encontre opções, serviços e emissões relacionadas a vacinação para o cidadão.",
+        "description": "Campanhas e pontos de imunização contra doenças.",
         "services": []
       },
       {
         "id": "Gestação e Primeira infância",
         "name": "Gestação e Primeira infância",
-        "description": "Encontre opções, serviços e emissões relacionadas a gestação e primeira infância para o cidadão.",
+        "description": "Cuidados de saúde para gestantes e crianças nos primeiros anos de vida.",
         "services": [
           {
             "id": "Cegonha carioca",
@@ -886,25 +886,25 @@
       {
         "id": "Medicamentos",
         "name": "Medicamentos",
-        "description": "Encontre opções, serviços e emissões relacionadas a medicamentos para o cidadão.",
+        "description": "Acesso a remédios e informações sobre farmácias populares.",
         "services": []
       },
       {
         "id": "Dengue",
         "name": "Dengue",
-        "description": "Encontre opções, serviços e emissões relacionadas a dengue para o cidadão.",
+        "description": "Ações de prevenção, combate ao mosquito e tratamento da doença.",
         "services": []
       },
       {
         "id": "Vigilância Sanitária",
         "name": "Vigilância Sanitária",
-        "description": "Encontre opções, serviços e emissões relacionadas a vigilância sanitária para o cidadão.",
+        "description": "Fiscalização da higiene e segurança de produtos e serviços.",
         "services": []
       },
       {
         "id": "Reabilitação",
         "name": "Reabilitação",
-        "description": "Encontre opções, serviços e emissões relacionadas a reabilitação para o cidadão.",
+        "description": "Recuperação de funções e qualidade de vida após doenças ou lesões.",
         "services": [
           {
             "id": "Centro de reabilitação...",
@@ -915,7 +915,7 @@
       {
         "id": "Programas",
         "name": "Programas",
-        "description": "Encontre opções, serviços e emissões relacionadas a programas para o cidadão.",
+        "description": "Os programas de saúde oferecidos pelo município.",
         "services": [
           {
             "id": "Programa antitabagismo",
@@ -936,12 +936,12 @@
   {
     "id": "Ordem pública",
     "name": "Ordem pública",
-    "description": "Controle de comércio ambulante, perturbação do sossego e fiscalização de espaços comerciais.",
+    "description": "As regras e ações para a segurança e o bem-estar da população em espaços públicos.",
     "subthemes": [
       {
         "id": "Ocupação/Uso de área pública",
         "name": "Ocupação/Uso de área pública",
-        "description": "Encontre opções, serviços e emissões relacionadas a ocupação/uso de área pública para o cidadão.",
+        "description": "O uso e a ocupação de calçadas, ruas e outras áreas públicas.",
         "services": [
           {
             "id": "Sacolão volante",
@@ -960,31 +960,31 @@
       {
         "id": "Perturbação do sossego",
         "name": "Perturbação do sossego",
-        "description": "Encontre opções, serviços e emissões relacionadas a perturbação do sossego para o cidadão.",
+        "description": "O barulho excessivo ou atividades que causam incômodo à vizinhança.",
         "services": []
       },
       {
         "id": "Comércio ambulante",
         "name": "Comércio ambulante",
-        "description": "Encontre opções, serviços e emissões relacionadas a comércio ambulante para o cidadão.",
+        "description": "A atividade de vendas e serviços realizados por ambulantes em locais públicos.",
         "services": []
       },
       {
         "id": "Estacionamento irregular",
         "name": "Estacionamento irregular",
-        "description": "Encontre opções, serviços e emissões relacionadas a estacionamento irregular para o cidadão.",
+        "description": "A parada ou permanência de veículos em locais não permitidos.",
         "services": []
       },
       {
         "id": "Feiras",
         "name": "Feiras",
-        "description": "Encontre opções, serviços e emissões relacionadas a feiras para o cidadão.",
+        "description": "As feiras livres e eventos organizados em espaços públicos.",
         "services": []
       },
       {
         "id": "Fiscalização de área pública",
         "name": "Fiscalização de área pública",
-        "description": "Encontre opções, serviços e emissões relacionadas a fiscalização de área pública para o cidadão.",
+        "description": "A supervisão e o controle do uso correto das áreas públicas.",
         "services": [
           {
             "id": "fiscalização de ocupação de área pública",
@@ -1003,7 +1003,7 @@
       {
         "id": "Veículos",
         "name": "Veículos",
-        "description": "Encontre opções, serviços e emissões relacionadas a veículos para o cidadão.",
+        "description": "As questões relacionadas a veículos e o cumprimento das normas em espaços públicos.",
         "services": [
           {
             "id": "veículos abandonados...",
@@ -1014,7 +1014,7 @@
       {
         "id": "Gratuidade",
         "name": "Gratuidade",
-        "description": "Encontre opções, serviços e emissões relacionadas a gratuidade para o cidadão.",
+        "description": "Os direitos de acesso gratuito a determinados serviços ou espaços públicos.",
         "services": [
           {
             "id": "gratuidade no transporte público...",
@@ -1025,7 +1025,7 @@
       {
         "id": "Tarifas",
         "name": "Tarifas",
-        "description": "Encontre opções, serviços e emissões relacionadas a tarifas para o cidadão.",
+        "description": "Os valores cobrados por serviços ou pelo uso de espaços públicos.",
         "services": [
           {
             "id": "histórico de tarifas... > Tarifas de transportes",
@@ -1038,12 +1038,12 @@
   {
     "id": "Transporte",
     "name": "Transporte",
-    "description": "Consultas e reclamações sobre ônibus, BRT, VLT, táxis, vans e transportes escolares.",
+    "description": "Os diferentes meios de locomoção de pessoas na cidade.",
     "subthemes": [
       {
         "id": "Transporte escolar",
         "name": "Transporte escolar",
-        "description": "Encontre opções, serviços e emissões relacionadas a transporte escolar para o cidadão.",
+        "description": "O deslocamento de alunos para as instituições de ensino.",
         "services": [
           {
             "id": "motorista auxiliar",
@@ -1070,7 +1070,7 @@
       {
         "id": "Transporte complementar",
         "name": "Transporte complementar",
-        "description": "Encontre opções, serviços e emissões relacionadas a transporte complementar para o cidadão.",
+        "description": "Os serviços de transporte público alternativo, como vans e micro-ônibus.",
         "services": [
           {
             "id": "motorista auxiliar",
@@ -1093,7 +1093,7 @@
       {
         "id": "Táxi e mototáxi",
         "name": "Táxi e mototáxi",
-        "description": "Encontre opções, serviços e emissões relacionadas a táxi e mototáxi para o cidadão.",
+        "description": "Os serviços de transporte individual de passageiros em carros e motos.",
         "services": [
           {
             "id": "motorista auxiliar",
@@ -1120,7 +1120,7 @@
       {
         "id": "Ônibus",
         "name": "Ônibus",
-        "description": "Encontre opções, serviços e emissões relacionadas a ônibus para o cidadão.",
+        "description": "O sistema de transporte público por ônibus na cidade.",
         "services": [
           {
             "id": "ar condicionado",
@@ -1139,7 +1139,7 @@
       {
         "id": "BRT",
         "name": "BRT",
-        "description": "Encontre opções, serviços e emissões relacionadas a brt para o cidadão.",
+        "description": "O sistema de transporte rápido por ônibus em corredores exclusivos.",
         "services": [
           {
             "id": "irregularidades",
@@ -1154,7 +1154,7 @@
       {
         "id": "Vans e kombis",
         "name": "Vans e kombis",
-        "description": "Encontre opções, serviços e emissões relacionadas a vans e kombis para o cidadão.",
+        "description": "O transporte coletivo de passageiros realizado por vans e kombis.",
         "services": [
           {
             "id": "vistorias... inclusão/baixa/permuta...",
@@ -1165,7 +1165,7 @@
       {
         "id": "VLT",
         "name": "VLT",
-        "description": "Encontre opções, serviços e emissões relacionadas a vlt para o cidadão.",
+        "description": "O sistema de transporte público sobre trilhos, como o Veículo Leve sobre Trilhos.",
         "services": [
           {
             "id": "pagamento de multa",
@@ -1176,7 +1176,7 @@
       {
         "id": "Bicicletas",
         "name": "Bicicletas",
-        "description": "Encontre opções, serviços e emissões relacionadas a bicicletas para o cidadão.",
+        "description": "As ciclovias, ciclofaixas e o uso de bicicletas como meio de transporte.",
         "services": [
           {
             "id": "ciclovias",
@@ -1195,7 +1195,7 @@
       {
         "id": "Jaé",
         "name": "Jaé",
-        "description": "Encontre opções, serviços e emissões relacionadas a jaé para o cidadão.",
+        "description": "O cartão de bilhetagem eletrônica utilizado no transporte público.",
         "services": []
       }
     ]
@@ -1203,36 +1203,36 @@
   {
     "id": "Ouvidoria",
     "name": "Ouvidoria",
-    "description": "Canal para elogios, sugestões, reclamações e suporte geral sobre o atendimento da prefeitura.",
+    "description": "O canal de comunicação para o cidadão expressar sua opinião sobre os serviços públicos.",
     "subthemes": [
       {
         "id": "Elogio",
         "name": "Elogio",
-        "description": "Encontre opções, serviços e emissões relacionadas a elogio para o cidadão.",
+        "description": "O reconhecimento público de um bom serviço ou atendimento.",
         "services": []
       },
       {
         "id": "Sugestão",
         "name": "Sugestão",
-        "description": "Encontre opções, serviços e emissões relacionadas a sugestão para o cidadão.",
+        "description": "A proposta de melhoria ou inovação para os serviços municipais.",
         "services": []
       },
       {
         "id": "Reclamação",
         "name": "Reclamação",
-        "description": "Encontre opções, serviços e emissões relacionadas a reclamação para o cidadão.",
+        "description": "A manifestação de insatisfação sobre um serviço ou atendimento.",
         "services": []
       },
       {
         "id": "Suporte técnico",
         "name": "Suporte técnico",
-        "description": "Encontre opções, serviços e emissões relacionadas a suporte técnico para o cidadão.",
+        "description": "A assistência para problemas técnicos em sistemas ou plataformas.",
         "services": []
       },
       {
         "id": "Insatisfação com teleatendimento",
         "name": "Insatisfação com teleatendimento",
-        "description": "Encontre opções, serviços e emissões relacionadas a insatisfação com teleatendimento para o cidadão.",
+        "description": "A queixa sobre o atendimento recebido por telefone.",
         "services": []
       }
     ]
@@ -1240,12 +1240,12 @@
   {
     "id": "Serviços urbanos",
     "name": "Serviços urbanos",
-    "description": "Solicitações de limpeza urbana, conservação de vias, iluminação pública e poda de árvores.",
+    "description": "Os cuidados com a infraestrutura e a manutenção da cidade.",
     "subthemes": [
       {
         "id": "Limpeza",
         "name": "Limpeza",
-        "description": "Encontre opções, serviços e emissões relacionadas a limpeza para o cidadão.",
+        "description": "A coleta de lixo, a varrição de ruas e a limpeza de áreas públicas.",
         "services": [
           {
             "id": "varrição",
@@ -1264,7 +1264,7 @@
       {
         "id": "Conservação",
         "name": "Conservação",
-        "description": "Encontre opções, serviços e emissões relacionadas a conservação para o cidadão.",
+        "description": "A manutenção de calçadas, praças, ruas e outros bens públicos.",
         "services": [
           {
             "id": "buraco na calçada",
@@ -1287,13 +1287,13 @@
       {
         "id": "Drenagem",
         "name": "Drenagem",
-        "description": "Encontre opções, serviços e emissões relacionadas a drenagem para o cidadão.",
+        "description": "O sistema de escoamento de água da chuva para evitar alagamentos.",
         "services": []
       },
       {
         "id": "Iluminação pública",
         "name": "Iluminação pública",
-        "description": "Encontre opções, serviços e emissões relacionadas a iluminação pública para o cidadão.",
+        "description": "As lâmpadas e postes que iluminam as ruas e espaços públicos.",
         "services": [
           {
             "id": "reparo de luminárias...",
@@ -1304,7 +1304,7 @@
       {
         "id": "Árvores",
         "name": "Árvores",
-        "description": "Encontre opções, serviços e emissões relacionadas a árvores para o cidadão.",
+        "description": "O plantio, a poda e a remoção de árvores em vias e áreas públicas.",
         "services": [
           {
             "id": "poda de árvores...",
@@ -1315,7 +1315,7 @@
       {
         "id": "Serviços funerários",
         "name": "Serviços funerários",
-        "description": "Encontre opções, serviços e emissões relacionadas a serviços funerários para o cidadão.",
+        "description": "Os serviços de cemitério, velório e sepultamento oferecidos pelo município.",
         "services": []
       }
     ]
@@ -1323,24 +1323,24 @@
   {
     "id": "Defesa Civil",
     "name": "Defesa Civil",
-    "description": "Atendimento a emergências, vistorias estruturais, prevenções de riscos e desinterdições.",
+    "description": "As ações de prevenção e resposta a desastres naturais e emergências.",
     "subthemes": [
       {
         "id": "Vistorias",
         "name": "Vistorias",
-        "description": "Encontre opções, serviços e emissões relacionadas a vistorias para o cidadão.",
+        "description": "Vistorias para avaliação de segurança em imóveis.",
         "services": []
       },
       {
         "id": "Desinterdição /",
         "name": "Desinterdição /",
-        "description": "Encontre opções, serviços e emissões relacionadas a desinterdição / para o cidadão.",
+        "description": "Desinterdição de áreas ou imóveis interditados.",
         "services": []
       },
       {
         "id": "Projetos",
         "name": "Projetos",
-        "description": "Encontre opções, serviços e emissões relacionadas a projetos para o cidadão.",
+        "description": "Projetos de prevenção e mitigação de riscos.",
         "services": []
       }
     ]
@@ -1348,12 +1348,12 @@
   {
     "id": "Trabalho",
     "name": "Trabalho",
-    "description": "Oportunidades de emprego formal, estágios e apoio ao empreendedorismo.",
+    "description": "Serviços e informações sobre emprego e qualificação profissional.",
     "subthemes": [
       {
         "id": "Pessoa Jurídica / Empresas e Autônomo",
         "name": "Pessoa Jurídica / Empresas e Autônomo",
-        "description": "Encontre opções, serviços e emissões relacionadas a pessoa jurídica / empresas e autônomo para o cidadão.",
+        "description": "Suporte e informações para empresas e trabalhadores autônomos.",
         "services": []
       }
     ]
@@ -1361,18 +1361,18 @@
   {
     "id": "Empresas",
     "name": "Empresas",
-    "description": "Orientações, regularizações e serviços específicos para Pessoas Jurídicas e alvarás.",
+    "description": "Serviços e informações para empresas e empreendedores.",
     "subthemes": []
   },
   {
     "id": "Trânsito",
     "name": "Trânsito",
-    "description": "Consultas sobre multas, estacionamentos regulares, placas de sinalização e fiscalização eletrônica.",
+    "description": "Informações sobre a circulação de veículos e pessoas nas vias.",
     "subthemes": [
       {
         "id": "Estacionamento",
         "name": "Estacionamento",
-        "description": "Encontre opções, serviços e emissões relacionadas a estacionamento para o cidadão.",
+        "description": "Regras e informações sobre o estacionamento de veículos.",
         "services": [
           {
             "id": "área de embarque e desembarque",
@@ -1391,7 +1391,7 @@
       {
         "id": "Placas e sinal de trânsito",
         "name": "Placas e sinal de trânsito",
-        "description": "Encontre opções, serviços e emissões relacionadas a placas e sinal de trânsito para o cidadão.",
+        "description": "Informações sobre placas e sinalização de trânsito.",
         "services": [
           {
             "id": "sinalização gráfica horizontal",
@@ -1414,7 +1414,7 @@
       {
         "id": "Multas",
         "name": "Multas",
-        "description": "Encontre opções, serviços e emissões relacionadas a multas para o cidadão.",
+        "description": "Informações sobre multas e penalidades de trânsito.",
         "services": [
           {
             "id": "multas de trânsito",
@@ -1429,7 +1429,7 @@
       {
         "id": "Fiscalização eletrônica",
         "name": "Fiscalização eletrônica",
-        "description": "Encontre opções, serviços e emissões relacionadas a fiscalização eletrônica para o cidadão.",
+        "description": "Informações sobre o monitoramento eletrônico de veículos.",
         "services": [
           {
             "id": "implantação",
@@ -1448,7 +1448,7 @@
       {
         "id": "Carteira Digital de Trânsito",
         "name": "Carteira Digital de Trânsito",
-        "description": "Encontre opções, serviços e emissões relacionadas a carteira digital de trânsito para o cidadão.",
+        "description": "Informações sobre a Carteira Nacional de Habilitação digital.",
         "services": []
       }
     ]
@@ -1456,24 +1456,24 @@
   {
     "id": "Transparência",
     "name": "Transparência",
-    "description": "Acesso à informação pública, portal de dados abertos e diretrizes anticorrupção.",
+    "description": "Acesso a informações e dados públicos do município.",
     "subthemes": [
       {
         "id": "Anticorrupção",
         "name": "Anticorrupção",
-        "description": "Encontre opções, serviços e emissões relacionadas a anticorrupção para o cidadão.",
+        "description": "Medidas de combate à corrupção na administração pública.",
         "services": []
       },
       {
         "id": "Acesso à Informação (LAI)",
         "name": "Acesso à Informação (LAI)",
-        "description": "Encontre opções, serviços e emissões relacionadas a acesso à informação (lai) para o cidadão.",
+        "description": "Acesso a informações públicas conforme a Lei.",
         "services": []
       },
       {
         "id": "Proteção de dados (LGPD)",
         "name": "Proteção de dados (LGPD)",
-        "description": "Encontre opções, serviços e emissões relacionadas a proteção de dados (lgpd) para o cidadão.",
+        "description": "Regras e segurança sobre o tratamento de dados pessoais.",
         "services": []
       }
     ]
@@ -1481,12 +1481,12 @@
   {
     "id": "Tributos",
     "name": "Tributos",
-    "description": "Assuntos referentes a IPTU, ITBI, ISS, Dívida Ativa e outras taxas municipais e emissão de guias.",
+    "description": "Informações sobre impostos e taxas cobradas pelo município.",
     "subthemes": [
       {
         "id": "Dívida Ativa",
         "name": "Dívida Ativa",
-        "description": "Encontre opções, serviços e emissões relacionadas a dívida ativa para o cidadão.",
+        "description": "Informações sobre débitos pendentes com o município.",
         "services": []
       }
     ]
@@ -1494,12 +1494,12 @@
   {
     "id": "Serviços funerários",
     "name": "Serviços funerários",
-    "description": "Informações sobre cemitérios, taxas municipais relacionadas e serviços funerários da cidade.",
+    "description": "Informações sobre serviços e assistência funerária municipal.",
     "subthemes": [
       {
         "id": "Taxas municipais",
         "name": "Taxas municipais",
-        "description": "Encontre opções, serviços e emissões relacionadas a taxas municipais para o cidadão.",
+        "description": "Valores e pagamento de taxas municipais de serviços funerários.",
         "services": [
           {
             "id": "taxa de fiscalização de cemitério...",
@@ -1510,13 +1510,13 @@
       {
         "id": "ISS",
         "name": "ISS",
-        "description": "Encontre opções, serviços e emissões relacionadas a iss para o cidadão.",
+        "description": "Imposto Sobre Serviços (ISS) em atividades funerárias.",
         "services": []
       },
       {
         "id": "Nota Carioca",
         "name": "Nota Carioca",
-        "description": "Encontre opções, serviços e emissões relacionadas a nota carioca para o cidadão.",
+        "description": "Emissão de Nota Carioca para serviços funerários.",
         "services": []
       }
     ]
@@ -1524,12 +1524,12 @@
   {
     "id": "Turismo e Eventos",
     "name": "Turismo e Eventos",
-    "description": "Informações turísticas gerais e coordenação de grandes eventos na cidade do Rio.",
+    "description": "Informações sobre turismo e eventos na cidade.",
     "subthemes": [
       {
         "id": "Transporte",
         "name": "Transporte",
-        "description": "Encontre opções, serviços e emissões relacionadas a transporte para o cidadão.",
+        "description": "Opções de transporte para turistas e participantes de eventos.",
         "services": [
           {
             "id": "Informações gerais sobre transporte público",
@@ -1540,7 +1540,7 @@
       {
         "id": "Saúde",
         "name": "Saúde",
-        "description": "Encontre opções, serviços e emissões relacionadas a saúde para o cidadão.",
+        "description": "Serviços de saúde para turistas e participantes de eventos.",
         "services": [
           {
             "id": "Informações gerais sobre saúde pública do Rio",
@@ -1551,7 +1551,7 @@
       {
         "id": "Turismo pela cidade",
         "name": "Turismo pela cidade",
-        "description": "Encontre opções, serviços e emissões relacionadas a turismo pela cidade para o cidadão.",
+        "description": "Roteiros turísticos e atrações da cidade.",
         "services": [
           {
             "id": "Informações turísticas",
@@ -1562,7 +1562,7 @@
       {
         "id": "Grandes eventos",
         "name": "Grandes eventos",
-        "description": "Encontre opções, serviços e emissões relacionadas a grandes eventos para o cidadão.",
+        "description": "Informações sobre a organização de grandes eventos na cidade.",
         "services": [
           {
             "id": "Todo mundo no Rio...",
@@ -1575,12 +1575,12 @@
   {
     "id": "Carnaval (volante)",
     "name": "Carnaval (volante)",
-    "description": "Inscrições para blocos, credenciamento e demais informações temporárias ligadas aos eventos do Carnaval.",
+    "description": "Informações gerais sobre a celebração do Carnaval.",
     "subthemes": [
       {
         "id": "Blocos de rua",
         "name": "Blocos de rua",
-        "description": "Encontre opções, serviços e emissões relacionadas a blocos de rua para o cidadão.",
+        "description": "Informações sobre os blocos de Carnaval nas ruas.",
         "services": [
           {
             "id": "Agenda de blocos de rua",
@@ -1595,7 +1595,7 @@
       {
         "id": "Trabalhadores do Carnaval",
         "name": "Trabalhadores do Carnaval",
-        "description": "Encontre opções, serviços e emissões relacionadas a trabalhadores do carnaval para o cidadão.",
+        "description": "Informações para profissionais que atuam no Carnaval.",
         "services": [
           {
             "id": "cadastro",
@@ -1606,7 +1606,7 @@
       {
         "id": "Desfiles na Sapucaí",
         "name": "Desfiles na Sapucaí",
-        "description": "Encontre opções, serviços e emissões relacionadas a desfiles na sapucaí para o cidadão.",
+        "description": "Informações sobre os desfiles das escolas de samba na Sapucaí.",
         "services": [
           {
             "id": "informações sobre desfiles",
