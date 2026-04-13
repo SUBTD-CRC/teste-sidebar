@@ -197,7 +197,7 @@ function createItemHTML(item, type, isSelected) {
 
     return `
         <div class="list-item ${selectedClass}" data-id="${item.id}" data-type="${type}">
-            <div class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></div>
+
             ${iconHtml}
             <span class="item-name">${sanitizeHTML(item.name || '(Sem nome)')}</span>
             <i class="fa-solid fa-chevron-right item-arrow"></i>
@@ -214,7 +214,7 @@ function renderThemes() {
     // Bind click events
     listThemes.querySelectorAll('.list-item').forEach(el => {
         el.addEventListener('click', (e) => {
-            if (e.target.closest('.drag-handle')) return;
+
             selectedThemeId = el.dataset.id;
             selectedSubthemeId = null; // reset children
             selectedServiceId = null;
@@ -243,7 +243,7 @@ function renderSubthemes() {
 
     listSubthemes.querySelectorAll('.list-item').forEach(el => {
         el.addEventListener('click', (e) => {
-            if (e.target.closest('.drag-handle')) return;
+
             selectedSubthemeId = el.dataset.id;
             selectedServiceId = null;
             openEditor(selectedSubthemeId, 'subtheme');
@@ -270,7 +270,7 @@ function renderServices() {
 
     listServices.querySelectorAll('.list-item').forEach(el => {
         el.addEventListener('click', (e) => {
-            if (e.target.closest('.drag-handle')) return;
+
             selectedServiceId = el.dataset.id;
             openEditor(selectedServiceId, 'service');
             renderServices();
@@ -518,7 +518,7 @@ addForm.addEventListener('submit', async (e) => {
 function initSortables() {
     new Sortable(listThemes, {
         group: 'shared-levels',
-        handle: '.drag-handle', animation: 150, fallbackOnBody: true,
+        animation: 150, fallbackOnBody: true,
         onEnd: (evt) => {
             if (evt.to === listSubthemes) {
                 if (!selectedThemeId) return;
@@ -564,7 +564,7 @@ function initSortables() {
 
     new Sortable(listSubthemes, {
         group: 'shared-levels',
-        handle: '.drag-handle', animation: 150, fallbackOnBody: true,
+        animation: 150, fallbackOnBody: true,
         onEnd: (evt) => {
             if (!selectedThemeId) return;
             const sourceTheme = appData.find(t => t.id === selectedThemeId);
@@ -599,7 +599,7 @@ function initSortables() {
     });
 
     new Sortable(listServices, {
-        handle: '.drag-handle', animation: 150, fallbackOnBody: true,
+        animation: 150, fallbackOnBody: true,
         onEnd: (evt) => {
             if (evt.oldIndex === evt.newIndex || !selectedSubthemeId) return;
             const theme = appData.find(t => t.id === selectedThemeId);
