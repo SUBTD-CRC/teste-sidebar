@@ -17,7 +17,7 @@ async function batchProcess(items) {
     
     let text = '';
     try {
-        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ contents: [{ parts: [{ text: promptText }] }] })
@@ -27,13 +27,19 @@ async function batchProcess(items) {
         const json = await response.json();
         text = json.candidates?.[0]?.content?.parts?.[0]?.text?.trim() || '[]';
         
-        if (text.startsWith('```json')) text = text.replace(/```json\n|\n```|```/g, '');
-        else if (text.startsWith('```')) text = text.replace(/```\n|\n```|```/g, '');
+        // Limpeza de Markdown
+        text = text.replace(/```json\n?|```\n?|```/g, '').trim();
+        
+        // Tentar encontrar o array [ ... ] caso venha texto extra
+        const start = text.indexOf('[');
+        const end = text.lastIndexOf(']');
+        if (start !== -1 && end !== -1) {
+            text = text.substring(start, end + 1);
+        }
         
         return JSON.parse(text);
     } catch(e) {
-        console.error('Falha no JSON retornado: ', text.substring(0, 50));
-        console.error(e);
+        console.error('Falha no processamento do lote. Erro:', e.message);
         return Array(items.length).fill('');
     }
 }

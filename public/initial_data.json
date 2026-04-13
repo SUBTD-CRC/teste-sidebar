@@ -2,12 +2,12 @@
   {
     "id": "Administração pública",
     "name": "Administração pública",
-    "description": "Gestão dos assuntos e serviços da cidade.",
+    "description": "Serviços relacionados à gestão do município.",
     "subthemes": [
       {
         "id": "Saúde do servidor",
         "name": "Saúde do servidor",
-        "description": "Cuidados com a saúde dos funcionários municipais.",
+        "description": "Informações e serviços sobre o bem-estar do servidor municipal.",
         "services": [
           {
             "id": "licença médica",
@@ -20,13 +20,17 @@
           {
             "id": "plano de saúde",
             "name": "plano de saúde"
+          },
+          {
+            "id": "...",
+            "name": "..."
           }
         ]
       },
       {
         "id": "Solicitações do servidor",
         "name": "Solicitações do servidor",
-        "description": "Pedidos e requerimentos dos funcionários públicos.",
+        "description": "Requerimentos e acompanhamento de demandas do servidor.",
         "services": [
           {
             "id": "Revisão de FGTS celetista",
@@ -43,19 +47,23 @@
           {
             "id": "afastamento",
             "name": "afastamento"
+          },
+          {
+            "id": "...",
+            "name": "..."
           }
         ]
       },
       {
         "id": "Consulta a processos",
         "name": "Consulta a processos",
-        "description": "Acesso ao andamento de processos administrativos.",
+        "description": "Acesso ao histórico e status de processos administrativos.",
         "services": []
       },
       {
         "id": "Benefícios",
         "name": "Benefícios",
-        "description": "Vantagens e auxílios para os servidores municipais.",
+        "description": "Informações sobre auxílios e vantagens oferecidas.",
         "services": [
           {
             "id": "auxílio creche",
@@ -64,19 +72,23 @@
           {
             "id": "auxílio medicamento",
             "name": "auxílio medicamento"
+          },
+          {
+            "id": "...",
+            "name": "..."
           }
         ]
       },
       {
         "id": "Concursos e Processos seletivos",
         "name": "Concursos e Processos seletivos",
-        "description": "Oportunidades de ingresso no serviço público municipal.",
+        "description": "Editais e resultados de seleções para cargos públicos.",
         "services": []
       },
       {
         "id": "Previdência do servidor",
         "name": "Previdência do servidor",
-        "description": "Regime de aposentadoria e pensões para funcionários.",
+        "description": "Informações sobre o sistema de aposentadoria municipal.",
         "services": [
           {
             "id": "Pensão por morte",
@@ -89,13 +101,17 @@
           {
             "id": "informe de rendimentos do pensionista",
             "name": "informe de rendimentos do pensionista"
+          },
+          {
+            "id": "...",
+            "name": "..."
           }
         ]
       },
       {
         "id": "Licitação e Pregão",
         "name": "Licitação e Pregão",
-        "description": "Procedimentos para contratação de bens e serviços pelo município.",
+        "description": "Processos de compra e contratação de serviços públicos.",
         "services": [
           {
             "id": "Informações sobre licitação e pregão",
@@ -104,74 +120,22 @@
         ]
       },
       {
-        "id": "Permissão de publicidades",
-        "name": "Permissão de publicidades",
-        "description": "Autorização para exibir publicidade na cidade.",
-        "services": [
-          {
-            "id": "autorização para publicidade",
-            "name": "autorização para publicidade"
-          }
-        ]
-      },
-      {
         "id": "Irregularidades em empresas terceirizadas",
         "name": "Irregularidades em empresas terceirizadas",
-        "description": "Denúncias sobre falhas em serviços de empresas contratadas.",
+        "description": "Denúncias sobre o não cumprimento de contratos.",
         "services": []
-      },
-      {
-        "id": "Emprego formal",
-        "name": "Emprego formal",
-        "description": "Informações sobre vagas e direitos trabalhistas formais.",
-        "services": [
-          {
-            "id": "carteira de trabalho",
-            "name": "carteira de trabalho"
-          },
-          {
-            "id": "programa trabalha rio",
-            "name": "programa trabalha rio"
-          },
-          {
-            "id": "vagas de emprego...",
-            "name": "vagas de emprego..."
-          }
-        ]
-      },
-      {
-        "id": "Estágio",
-        "name": "Estágio",
-        "description": "Programas de experiência profissional para estudantes.",
-        "services": [
-          {
-            "id": "estágio na prefeitura...",
-            "name": "estágio na prefeitura..."
-          }
-        ]
-      },
-      {
-        "id": "Empreendedorismo",
-        "name": "Empreendedorismo",
-        "description": "Apoio e incentivo a novas iniciativas de negócios.",
-        "services": [
-          {
-            "id": "programa empreenda rio...",
-            "name": "programa empreenda rio..."
-          }
-        ]
       }
     ]
   },
   {
     "id": "Animais",
     "name": "Animais",
-    "description": "Serviços e informações sobre bichos na cidade.",
+    "description": "Serviços relacionados a animais.",
     "subthemes": [
       {
         "id": "Saúde animal",
         "name": "Saúde animal",
-        "description": "Cuidados veterinários e bem-estar dos animais.",
+        "description": "Cuidados com a saúde de animais domésticos e silvestres.",
         "services": [
           {
             "id": "Exames",
@@ -194,7 +158,7 @@
       {
         "id": "Proteção aos animais",
         "name": "Proteção aos animais",
-        "description": "Medidas de defesa e segurança para os animais.",
+        "description": "Ações para garantir o bem-estar e a proteção animal.",
         "services": [
           {
             "id": "animal encontrado na via",
@@ -223,12 +187,12 @@
   {
     "id": "Cidadania",
     "name": "Cidadania",
-    "description": "Direitos e deveres dos habitantes da cidade.",
+    "description": "Serviços relacionados à garantia dos direitos do cidadão.",
     "subthemes": [
       {
         "id": "Assistência social",
         "name": "Assistência social",
-        "description": "Apoio a pessoas em situação de vulnerabilidade social.",
+        "description": "Programas e serviços de apoio a pessoas em vulnerabilidade.",
         "services": [
           {
             "id": "Acolhimento",
@@ -251,7 +215,7 @@
       {
         "id": "Acessibilidade",
         "name": "Acessibilidade",
-        "description": "Facilidades para todos, incluindo pessoas com deficiência.",
+        "description": "Ações para facilitar o acesso de todos aos serviços.",
         "services": [
           {
             "id": "Inclusão de PCDs no mercado de trabalho",
@@ -262,7 +226,7 @@
       {
         "id": "Direitos Humanos",
         "name": "Direitos Humanos",
-        "description": "Garantia da dignidade e igualdade para todos.",
+        "description": "Defesa dos direitos fundamentais de todos os cidadãos.",
         "services": [
           {
             "id": "Casos de intolerância religiosa",
@@ -277,7 +241,7 @@
       {
         "id": "Mulher carioca",
         "name": "Mulher carioca",
-        "description": "Serviços e direitos específicos para as mulheres da cidade.",
+        "description": "Serviços e programas voltados para as mulheres.",
         "services": [
           {
             "id": "Casas da Mulher",
@@ -286,19 +250,23 @@
           {
             "id": "Vítimas de violência",
             "name": "Vítimas de violência"
+          },
+          {
+            "id": "...",
+            "name": "..."
           }
         ]
       },
       {
         "id": "PROCON carioca",
         "name": "PROCON carioca",
-        "description": "Defesa dos direitos dos consumidores na cidade.",
+        "description": "Atendimento e defesa do consumidor na cidade.",
         "services": []
       },
       {
         "id": "Participação social",
         "name": "Participação social",
-        "description": "Envolvimento da população nas decisões da cidade.",
+        "description": "Incentivo à participação do cidadão nas decisões.",
         "services": [
           {
             "id": "Participa.rio",
@@ -311,12 +279,12 @@
   {
     "id": "Cultura, Esporte e Lazer",
     "name": "Cultura, Esporte e Lazer",
-    "description": "Atividades e eventos de arte, esportes e diversão.",
+    "description": "Serviços relacionados a cultura, esporte e lazer.",
     "subthemes": [
       {
         "id": "Atividade física",
         "name": "Atividade física",
-        "description": "Programas e locais para a prática de exercícios.",
+        "description": "Incentivo à prática de exercícios físicos e esportes.",
         "services": [
           {
             "id": "Academias da terceira idade",
@@ -335,7 +303,7 @@
       {
         "id": "Audiovisual",
         "name": "Audiovisual",
-        "description": "Produção e exibição de filmes, vídeos e mídias.",
+        "description": "Apoio à produção e difusão de obras audiovisuais.",
         "services": [
           {
             "id": "subtipos riofilme",
@@ -346,7 +314,7 @@
       {
         "id": "Incentivo cultural",
         "name": "Incentivo cultural",
-        "description": "Apoio a projetos e eventos de cultura.",
+        "description": "Fomento a projetos e atividades culturais na cidade.",
         "services": [
           {
             "id": "redes de roda de samba",
@@ -369,7 +337,7 @@
       {
         "id": "Espaços culturais",
         "name": "Espaços culturais",
-        "description": "Locais para eventos de arte, shows e exposições.",
+        "description": "Informações sobre teatros, museus e centros culturais.",
         "services": [
           {
             "id": "Cidade das Artes",
@@ -410,12 +378,12 @@
   {
     "id": "Cursos",
     "name": "Cursos",
-    "description": "Oportunidades de aprendizado e qualificação profissional.",
+    "description": "Serviços relacionados à oferta de cursos.",
     "subthemes": [
       {
         "id": "Oportunidades Cariocas (land page)",
         "name": "Oportunidades Cariocas (land page)",
-        "description": "Plataforma de cursos e vagas para moradores do Rio.",
+        "description": "Plataforma com cursos e treinamentos para o cidadão.",
         "services": []
       }
     ]
@@ -423,12 +391,12 @@
   {
     "id": "Educação",
     "name": "Educação",
-    "description": "Ensino e aprendizado nas escolas municipais.",
+    "description": "Serviços relacionados ao sistema educacional.",
     "subthemes": [
       {
         "id": "Vida escolar",
         "name": "Vida escolar",
-        "description": "Informações sobre o dia a dia de alunos e escolas.",
+        "description": "Informações sobre o dia a dia nas escolas municipais.",
         "services": [
           {
             "id": "Calendário escolar",
@@ -455,7 +423,7 @@
       {
         "id": "MultiRio",
         "name": "MultiRio",
-        "description": "Conteúdos educativos e culturais para a rede municipal.",
+        "description": "Conteúdo educativo produzido pela MultiRio.",
         "services": [
           {
             "id": "subtipos multirio",
@@ -466,7 +434,7 @@
       {
         "id": "Educação Infantil",
         "name": "Educação Infantil",
-        "description": "Ensino para crianças de 0 a 5 anos de idade.",
+        "description": "Atendimento e educação para crianças pequenas.",
         "services": [
           {
             "id": "creches parceiras",
@@ -481,7 +449,7 @@
       {
         "id": "Ensino Fundamental e Médio",
         "name": "Ensino Fundamental e Médio",
-        "description": "Etapas de ensino para crianças e adolescentes.",
+        "description": "Ensino para crianças e adolescentes nas escolas.",
         "services": [
           {
             "id": "ensino domiciliar",
@@ -504,7 +472,7 @@
       {
         "id": "Educação Especial",
         "name": "Educação Especial",
-        "description": "Suporte e recursos para estudantes com necessidades educacionais específicas.",
+        "description": "Atendimento especializado para alunos com deficiência.",
         "services": [
           {
             "id": "inclusão de aluno especial",
@@ -519,7 +487,7 @@
       {
         "id": "Bibliotecas",
         "name": "Bibliotecas",
-        "description": "Locais de acesso a livros, leitura e cultura para todos.",
+        "description": "Acesso a livros e materiais de leitura nas bibliotecas.",
         "services": [
           {
             "id": "doação de livros",
@@ -532,9 +500,9 @@
         ]
       },
       {
-        "id": "Martrícula escolar",
-        "name": "Martrícula escolar",
-        "description": "Inscrição de estudantes em escolas da rede municipal.",
+        "id": "Matrícula escolar",
+        "name": "Matrícula escolar",
+        "description": "Processo de inscrição para vagas nas escolas municipais.",
         "services": [
           {
             "id": "matrícula 2027",
@@ -545,13 +513,13 @@
       {
         "id": "Segurança escolar",
         "name": "Segurança escolar",
-        "description": "Medidas de proteção e bem-estar para alunos e funcionários nas escolas.",
+        "description": "Ações para garantir a segurança nas escolas.",
         "services": []
       },
       {
         "id": "Cursos",
         "name": "Cursos",
-        "description": "Oferta de aulas e treinamentos em diversas áreas do conhecimento.",
+        "description": "Informações sobre cursos oferecidos.",
         "services": [
           {
             "id": "Naves do conhecimento",
@@ -576,12 +544,12 @@
   {
     "id": "Imóveis",
     "name": "Imóveis",
-    "description": "Assuntos relacionados a propriedades urbanas e rurais no município.",
+    "description": "Assuntos relacionados a propriedades.",
     "subthemes": [
       {
         "id": "IPTU",
         "name": "IPTU",
-        "description": "Imposto Predial e Territorial Urbano sobre propriedades.",
+        "description": "Informações sobre o Imposto Predial e Territorial Urbano.",
         "services": [
           {
             "id": "tudo relacionado a IPTU",
@@ -592,7 +560,7 @@
       {
         "id": "ITBI",
         "name": "ITBI",
-        "description": "Imposto sobre a Transmissão de Bens Imóveis na compra e venda.",
+        "description": "Informações sobre o Imposto sobre a Transmissão de Bens Imóveis.",
         "services": [
           {
             "id": "tudo relacionado a ITBI",
@@ -603,7 +571,7 @@
       {
         "id": "Leilão",
         "name": "Leilão",
-        "description": "Venda pública de bens imóveis, muitas vezes por dívidas.",
+        "description": "Informações sobre leilões de imóveis.",
         "services": [
           {
             "id": "imóvel leiloado...",
@@ -614,13 +582,13 @@
       {
         "id": "Imóveis protegidos",
         "name": "Imóveis protegidos",
-        "description": "Propriedades com valor histórico ou cultural sob proteção especial.",
+        "description": "Informações sobre imóveis com proteção especial.",
         "services": []
       },
       {
         "id": "Certidões e Documentos",
         "name": "Certidões e Documentos",
-        "description": "Emissão de comprovantes e papéis oficiais sobre propriedades.",
+        "description": "Emissão de certidões e documentos de imóveis.",
         "services": [
           {
             "id": "Habite-se",
@@ -629,13 +597,25 @@
           {
             "id": "revisão de numeração",
             "name": "revisão de numeração"
+          },
+          {
+            "id": "Projetos",
+            "name": "Projetos"
+          },
+          {
+            "id": "Documentos e Certidões para obras",
+            "name": "Documentos e Certidões para obras"
+          },
+          {
+            "id": "compensação das emissões de gases do efeito estufa de obras...",
+            "name": "compensação das emissões de gases do efeito estufa de obras..."
           }
         ]
       },
       {
         "id": "Fiscalização de imóveis",
         "name": "Fiscalização de imóveis",
-        "description": "Verificação do cumprimento de regras e normas para construções e uso.",
+        "description": "Fiscalização de irregularidades em imóveis.",
         "services": [
           {
             "id": "obras irregulares...",
@@ -646,17 +626,97 @@
       {
         "id": "Usucapião",
         "name": "Usucapião",
-        "description": "Regularização da posse de um imóvel por uso prolongado.",
+        "description": "Informações sobre o processo de Usucapião.",
+        "services": []
+      }
+    ]
+  },
+  {
+    "id": "Atividade econômica",
+    "name": "Atividade econômica",
+    "description": "Assuntos relacionados ao exercício de atividades econômicas.",
+    "subthemes": [
+      {
+        "id": "[pensar subcategorias]",
+        "name": "[pensar subcategorias]",
+        "description": "",
+        "services": []
+      }
+    ]
+  },
+  {
+    "id": "Licenças, Alvarás e Permissões",
+    "name": "Licenças, Alvarás e Permissões",
+    "description": "Assuntos relacionados a permissões e autorizações.",
+    "subthemes": [
+      {
+        "id": "Ambientais",
+        "name": "Ambientais",
+        "description": "Licenças relacionadas ao meio ambiente.",
         "services": []
       },
       {
-        "id": "Licenças urbanísticas",
-        "name": "Licenças urbanísticas",
-        "description": "Permissões para obras, construções e reformas na cidade.",
+        "id": "Sanitárias",
+        "name": "Sanitárias",
+        "description": "Licenças relacionadas à saúde.",
+        "services": []
+      },
+      {
+        "id": "Urbanísticas",
+        "name": "Urbanísticas",
+        "description": "Licenças relacionadas ao planejamento da cidade.",
+        "services": []
+      },
+      {
+        "id": "Publicidades",
+        "name": "Publicidades",
+        "description": "Licenças relacionadas a anúncios e propagandas.",
         "services": [
           {
-            "id": "Projetos",
-            "name": "Projetos"
+            "id": "autorização para publicidade",
+            "name": "autorização para publicidade"
+          }
+        ]
+      },
+      {
+        "id": "Ocupação de área pública",
+        "name": "Ocupação de área pública",
+        "description": "Licenças para uso de espaços públicos.",
+        "services": [
+          {
+            "id": "Sacolão volante",
+            "name": "Sacolão volante"
+          },
+          {
+            "id": "foodtruck",
+            "name": "foodtruck"
+          },
+          {
+            "id": "banca de jornal...",
+            "name": "banca de jornal..."
+          }
+        ]
+      },
+      {
+        "id": "Transportes",
+        "name": "Transportes",
+        "description": "Licenças relacionadas ao sistema de transporte.",
+        "services": [
+          {
+            "id": "motorista auxiliar",
+            "name": "motorista auxiliar"
+          },
+          {
+            "id": "baixa",
+            "name": "baixa"
+          },
+          {
+            "id": "inclusão",
+            "name": "inclusão"
+          },
+          {
+            "id": "permuta...",
+            "name": "permuta..."
           }
         ]
       }
@@ -665,18 +725,12 @@
   {
     "id": "Meio Ambiente",
     "name": "Meio Ambiente",
-    "description": "Assuntos sobre a natureza, parques, poluição e sustentabilidade na cidade.",
+    "description": "Assuntos relacionados ao meio ambiente.",
     "subthemes": [
-      {
-        "id": "Licenças ambientais",
-        "name": "Licenças ambientais",
-        "description": "Autorizações para atividades com impacto no meio ambiente.",
-        "services": []
-      },
       {
         "id": "Poluição urbana",
         "name": "Poluição urbana",
-        "description": "Controle e combate à contaminação do ar, água e solo na cidade.",
+        "description": "Denúncias sobre poluição na cidade.",
         "services": [
           {
             "id": "poluição do ar",
@@ -699,7 +753,7 @@
       {
         "id": "Desmatamento",
         "name": "Desmatamento",
-        "description": "Combate à derrubada ilegal de árvores e vegetação.",
+        "description": "Denúncias sobre corte ilegal de árvores.",
         "services": [
           {
             "id": "queimadas",
@@ -714,7 +768,7 @@
       {
         "id": "Arborização",
         "name": "Arborização",
-        "description": "Plantio, poda e cuidado com as árvores nas ruas e áreas verdes.",
+        "description": "Informações sobre plantio e cuidado de árvores.",
         "services": [
           {
             "id": "Adote.Rio",
@@ -729,7 +783,7 @@
       {
         "id": "Parques",
         "name": "Parques",
-        "description": "Áreas verdes de lazer, conservação e contato com a natureza.",
+        "description": "Informações sobre os parques municipais.",
         "services": [
           {
             "id": "Parque Nacional da Tijuca",
@@ -748,7 +802,7 @@
       {
         "id": "Fiscalização ambiental",
         "name": "Fiscalização ambiental",
-        "description": "Verificação do cumprimento de leis e normas de proteção ambiental.",
+        "description": "Fiscalização de crimes contra o meio ambiente.",
         "services": [
           {
             "id": "captação irregular de água",
@@ -771,7 +825,7 @@
       {
         "id": "Educação Ambiental",
         "name": "Educação Ambiental",
-        "description": "Informações e atividades para a conscientização sobre o meio ambiente.",
+        "description": "Ações para conscientização sobre o meio ambiente.",
         "services": [
           {
             "id": "reciclagem",
@@ -786,7 +840,7 @@
       {
         "id": "Certificados",
         "name": "Certificados",
-        "description": "Emissão de documentos que atestam conformidade ambiental.",
+        "description": "Emissão de certificados ambientais.",
         "services": [
           {
             "id": "Certificado de adequação de imóveis...",
@@ -797,20 +851,101 @@
     ]
   },
   {
-    "id": "Saúde",
-    "name": "Saúde",
-    "description": "Serviços e informações sobre o bem-estar e atendimento médico para a população.",
+    "id": "Ordem pública",
+    "name": "Ordem pública",
+    "description": "Assuntos relacionados à segurança e bem-estar da população.",
     "subthemes": [
       {
-        "id": "Licenças sanitárias",
-        "name": "Licenças sanitárias",
-        "description": "Permissões para estabelecimentos que lidam com saúde e alimentos.",
+        "id": "Perturbação do sossego",
+        "name": "Perturbação do sossego",
+        "description": "Denúncias sobre barulho excessivo.",
         "services": []
       },
       {
+        "id": "Comércio ambulante",
+        "name": "Comércio ambulante",
+        "description": "Denúncias sobre vendas irregulares nas ruas.",
+        "services": []
+      },
+      {
+        "id": "Estacionamento irregular",
+        "name": "Estacionamento irregular",
+        "description": "Denúncias sobre veículos estacionados em locais proibidos.",
+        "services": []
+      },
+      {
+        "id": "Feiras",
+        "name": "Feiras",
+        "description": "Informações sobre o funcionamento das feiras livres.",
+        "services": []
+      },
+      {
+        "id": "Fiscalização de área pública",
+        "name": "Fiscalização de área pública",
+        "description": "Fiscalização da utilização de espaços públicos.",
+        "services": [
+          {
+            "id": "fiscalização de ocupação de área pública",
+            "name": "fiscalização de ocupação de área pública"
+          },
+          {
+            "id": "fiscalização de banca de jornal",
+            "name": "fiscalização de banca de jornal"
+          },
+          {
+            "id": "remoção de carcaça de veículo e veículos abandonados...",
+            "name": "remoção de carcaça de veículo e veículos abandonados..."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Ouvidoria",
+    "name": "Ouvidoria",
+    "description": "Recebimento de manifestações sobre os serviços da prefeitura.",
+    "subthemes": [
+      {
+        "id": "Elogio",
+        "name": "Elogio",
+        "description": "Manifestações de reconhecimento por serviços prestados.",
+        "services": []
+      },
+      {
+        "id": "Sugestão",
+        "name": "Sugestão",
+        "description": "Apresentação de ideias para melhorar os serviços.",
+        "services": []
+      },
+      {
+        "id": "Reclamação",
+        "name": "Reclamação",
+        "description": "Registro de queixa sobre serviços.",
+        "services": []
+      },
+      {
+        "id": "Suporte técnico",
+        "name": "Suporte técnico",
+        "description": "Assistência para problemas técnicos.",
+        "services": []
+      },
+      {
+        "id": "Insatisfação com teleatendimento",
+        "name": "Insatisfação com teleatendimento",
+        "description": "Manifestação sobre atendimento ruim.",
+        "services": []
+      }
+    ]
+  },
+  {
+    "id": "Saúde",
+    "name": "Saúde",
+    "description": "Informações e serviços de saúde.",
+    "subthemes": [
+      {
         "id": "Atendimento hospitalar / Hospitais",
         "name": "Atendimento hospitalar / Hospitais",
-        "description": "Cuidados médicos para internações e casos complexos em hospitais.",
+        "description": "Acesso a cuidados em hospitais.",
         "services": [
           {
             "id": "Hospitais...",
@@ -821,7 +956,7 @@
       {
         "id": "Emergência / UPAs e Centros de Emergência",
         "name": "Emergência / UPAs e Centros de Emergência",
-        "description": "Atendimento rápido para casos urgentes e acidentes.",
+        "description": "Atendimento em urgências e emergências.",
         "services": [
           {
             "id": "UPA",
@@ -836,7 +971,7 @@
       {
         "id": "Atendimento ambulatorial / Consultas e exames / Clínicas da Família e Postos de Saúde",
         "name": "Atendimento ambulatorial / Consultas e exames / Clínicas da Família e Postos de Saúde",
-        "description": "Consultas médicas, exames e acompanhamento em clínicas e postos de saúde.",
+        "description": "Marcação de consultas e exames.",
         "services": [
           {
             "id": "CF e POSTOS DE SAÚDE",
@@ -847,19 +982,19 @@
       {
         "id": "Auxílios em saúde",
         "name": "Auxílios em saúde",
-        "description": "Suportes e benefícios para pessoas com necessidades específicas de saúde.",
+        "description": "Apoio financeiro para saúde.",
         "services": []
       },
       {
         "id": "Vacinação",
         "name": "Vacinação",
-        "description": "Campanhas e pontos de imunização contra doenças.",
+        "description": "Agendamento de vacinas.",
         "services": []
       },
       {
         "id": "Gestação e Primeira infância",
         "name": "Gestação e Primeira infância",
-        "description": "Cuidados de saúde para gestantes e crianças nos primeiros anos de vida.",
+        "description": "Cuidados durante a gravidez e infância.",
         "services": [
           {
             "id": "Cegonha carioca",
@@ -886,25 +1021,25 @@
       {
         "id": "Medicamentos",
         "name": "Medicamentos",
-        "description": "Acesso a remédios e informações sobre farmácias populares.",
+        "description": "Disponibilidade de remédios.",
         "services": []
       },
       {
         "id": "Dengue",
         "name": "Dengue",
-        "description": "Ações de prevenção, combate ao mosquito e tratamento da doença.",
+        "description": "Informações sobre a dengue.",
         "services": []
       },
       {
         "id": "Vigilância Sanitária",
         "name": "Vigilância Sanitária",
-        "description": "Fiscalização da higiene e segurança de produtos e serviços.",
+        "description": "Fiscalização de higiene e saúde.",
         "services": []
       },
       {
         "id": "Reabilitação",
         "name": "Reabilitação",
-        "description": "Recuperação de funções e qualidade de vida após doenças ou lesões.",
+        "description": "Serviços de recuperação da saúde.",
         "services": [
           {
             "id": "Centro de reabilitação...",
@@ -915,7 +1050,7 @@
       {
         "id": "Programas",
         "name": "Programas",
-        "description": "Os programas de saúde oferecidos pelo município.",
+        "description": "Iniciativas e projetos de saúde.",
         "services": [
           {
             "id": "Programa antitabagismo",
@@ -934,318 +1069,14 @@
     ]
   },
   {
-    "id": "Ordem pública",
-    "name": "Ordem pública",
-    "description": "As regras e ações para a segurança e o bem-estar da população em espaços públicos.",
-    "subthemes": [
-      {
-        "id": "Ocupação/Uso de área pública",
-        "name": "Ocupação/Uso de área pública",
-        "description": "O uso e a ocupação de calçadas, ruas e outras áreas públicas.",
-        "services": [
-          {
-            "id": "Sacolão volante",
-            "name": "Sacolão volante"
-          },
-          {
-            "id": "foodtruck",
-            "name": "foodtruck"
-          },
-          {
-            "id": "banca de jornal...",
-            "name": "banca de jornal..."
-          }
-        ]
-      },
-      {
-        "id": "Perturbação do sossego",
-        "name": "Perturbação do sossego",
-        "description": "O barulho excessivo ou atividades que causam incômodo à vizinhança.",
-        "services": []
-      },
-      {
-        "id": "Comércio ambulante",
-        "name": "Comércio ambulante",
-        "description": "A atividade de vendas e serviços realizados por ambulantes em locais públicos.",
-        "services": []
-      },
-      {
-        "id": "Estacionamento irregular",
-        "name": "Estacionamento irregular",
-        "description": "A parada ou permanência de veículos em locais não permitidos.",
-        "services": []
-      },
-      {
-        "id": "Feiras",
-        "name": "Feiras",
-        "description": "As feiras livres e eventos organizados em espaços públicos.",
-        "services": []
-      },
-      {
-        "id": "Fiscalização de área pública",
-        "name": "Fiscalização de área pública",
-        "description": "A supervisão e o controle do uso correto das áreas públicas.",
-        "services": [
-          {
-            "id": "fiscalização de ocupação de área pública",
-            "name": "fiscalização de ocupação de área pública"
-          },
-          {
-            "id": "fiscalização de banca de jornal",
-            "name": "fiscalização de banca de jornal"
-          },
-          {
-            "id": "remoção de carcaça de veículo...",
-            "name": "remoção de carcaça de veículo..."
-          }
-        ]
-      },
-      {
-        "id": "Veículos",
-        "name": "Veículos",
-        "description": "As questões relacionadas a veículos e o cumprimento das normas em espaços públicos.",
-        "services": [
-          {
-            "id": "veículos abandonados...",
-            "name": "veículos abandonados..."
-          }
-        ]
-      },
-      {
-        "id": "Gratuidade",
-        "name": "Gratuidade",
-        "description": "Os direitos de acesso gratuito a determinados serviços ou espaços públicos.",
-        "services": [
-          {
-            "id": "gratuidade no transporte público...",
-            "name": "gratuidade no transporte público..."
-          }
-        ]
-      },
-      {
-        "id": "Tarifas",
-        "name": "Tarifas",
-        "description": "Os valores cobrados por serviços ou pelo uso de espaços públicos.",
-        "services": [
-          {
-            "id": "histórico de tarifas... > Tarifas de transportes",
-            "name": "histórico de tarifas... > Tarifas de transportes"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "Transporte",
-    "name": "Transporte",
-    "description": "Os diferentes meios de locomoção de pessoas na cidade.",
-    "subthemes": [
-      {
-        "id": "Transporte escolar",
-        "name": "Transporte escolar",
-        "description": "O deslocamento de alunos para as instituições de ensino.",
-        "services": [
-          {
-            "id": "motorista auxiliar",
-            "name": "motorista auxiliar"
-          },
-          {
-            "id": "baixa",
-            "name": "baixa"
-          },
-          {
-            "id": "inclusão",
-            "name": "inclusão"
-          },
-          {
-            "id": "permuta...",
-            "name": "permuta..."
-          },
-          {
-            "id": "vistorias... inclusão/baixa/permuta...",
-            "name": "vistorias... inclusão/baixa/permuta..."
-          }
-        ]
-      },
-      {
-        "id": "Transporte complementar",
-        "name": "Transporte complementar",
-        "description": "Os serviços de transporte público alternativo, como vans e micro-ônibus.",
-        "services": [
-          {
-            "id": "motorista auxiliar",
-            "name": "motorista auxiliar"
-          },
-          {
-            "id": "baixa",
-            "name": "baixa"
-          },
-          {
-            "id": "inclusão",
-            "name": "inclusão"
-          },
-          {
-            "id": "permuta...",
-            "name": "permuta..."
-          }
-        ]
-      },
-      {
-        "id": "Táxi e mototáxi",
-        "name": "Táxi e mototáxi",
-        "description": "Os serviços de transporte individual de passageiros em carros e motos.",
-        "services": [
-          {
-            "id": "motorista auxiliar",
-            "name": "motorista auxiliar"
-          },
-          {
-            "id": "baixa",
-            "name": "baixa"
-          },
-          {
-            "id": "inclusão",
-            "name": "inclusão"
-          },
-          {
-            "id": "permuta...",
-            "name": "permuta..."
-          },
-          {
-            "id": "táxi.rio...",
-            "name": "táxi.rio..."
-          }
-        ]
-      },
-      {
-        "id": "Ônibus",
-        "name": "Ônibus",
-        "description": "O sistema de transporte público por ônibus na cidade.",
-        "services": [
-          {
-            "id": "ar condicionado",
-            "name": "ar condicionado"
-          },
-          {
-            "id": "conduta e condução do motorista",
-            "name": "conduta e condução do motorista"
-          },
-          {
-            "id": "irregularidades...",
-            "name": "irregularidades..."
-          }
-        ]
-      },
-      {
-        "id": "BRT",
-        "name": "BRT",
-        "description": "O sistema de transporte rápido por ônibus em corredores exclusivos.",
-        "services": [
-          {
-            "id": "irregularidades",
-            "name": "irregularidades"
-          },
-          {
-            "id": "estações...",
-            "name": "estações..."
-          }
-        ]
-      },
-      {
-        "id": "Vans e kombis",
-        "name": "Vans e kombis",
-        "description": "O transporte coletivo de passageiros realizado por vans e kombis.",
-        "services": [
-          {
-            "id": "vistorias... inclusão/baixa/permuta...",
-            "name": "vistorias... inclusão/baixa/permuta..."
-          }
-        ]
-      },
-      {
-        "id": "VLT",
-        "name": "VLT",
-        "description": "O sistema de transporte público sobre trilhos, como o Veículo Leve sobre Trilhos.",
-        "services": [
-          {
-            "id": "pagamento de multa",
-            "name": "pagamento de multa"
-          }
-        ]
-      },
-      {
-        "id": "Bicicletas",
-        "name": "Bicicletas",
-        "description": "As ciclovias, ciclofaixas e o uso de bicicletas como meio de transporte.",
-        "services": [
-          {
-            "id": "ciclovias",
-            "name": "ciclovias"
-          },
-          {
-            "id": "bikerio",
-            "name": "bikerio"
-          },
-          {
-            "id": "criação de paraciclos...",
-            "name": "criação de paraciclos..."
-          }
-        ]
-      },
-      {
-        "id": "Jaé",
-        "name": "Jaé",
-        "description": "O cartão de bilhetagem eletrônica utilizado no transporte público.",
-        "services": []
-      }
-    ]
-  },
-  {
-    "id": "Ouvidoria",
-    "name": "Ouvidoria",
-    "description": "O canal de comunicação para o cidadão expressar sua opinião sobre os serviços públicos.",
-    "subthemes": [
-      {
-        "id": "Elogio",
-        "name": "Elogio",
-        "description": "O reconhecimento público de um bom serviço ou atendimento.",
-        "services": []
-      },
-      {
-        "id": "Sugestão",
-        "name": "Sugestão",
-        "description": "A proposta de melhoria ou inovação para os serviços municipais.",
-        "services": []
-      },
-      {
-        "id": "Reclamação",
-        "name": "Reclamação",
-        "description": "A manifestação de insatisfação sobre um serviço ou atendimento.",
-        "services": []
-      },
-      {
-        "id": "Suporte técnico",
-        "name": "Suporte técnico",
-        "description": "A assistência para problemas técnicos em sistemas ou plataformas.",
-        "services": []
-      },
-      {
-        "id": "Insatisfação com teleatendimento",
-        "name": "Insatisfação com teleatendimento",
-        "description": "A queixa sobre o atendimento recebido por telefone.",
-        "services": []
-      }
-    ]
-  },
-  {
     "id": "Serviços urbanos",
     "name": "Serviços urbanos",
-    "description": "Os cuidados com a infraestrutura e a manutenção da cidade.",
+    "description": "Serviços de manutenção da cidade.",
     "subthemes": [
       {
         "id": "Limpeza",
         "name": "Limpeza",
-        "description": "A coleta de lixo, a varrição de ruas e a limpeza de áreas públicas.",
+        "description": "Remoção de lixo e limpeza urbana.",
         "services": [
           {
             "id": "varrição",
@@ -1264,7 +1095,7 @@
       {
         "id": "Conservação",
         "name": "Conservação",
-        "description": "A manutenção de calçadas, praças, ruas e outros bens públicos.",
+        "description": "Manutenção de espaços públicos.",
         "services": [
           {
             "id": "buraco na calçada",
@@ -1287,13 +1118,13 @@
       {
         "id": "Drenagem",
         "name": "Drenagem",
-        "description": "O sistema de escoamento de água da chuva para evitar alagamentos.",
+        "description": "Esgoto e águas pluviais.",
         "services": []
       },
       {
         "id": "Iluminação pública",
         "name": "Iluminação pública",
-        "description": "As lâmpadas e postes que iluminam as ruas e espaços públicos.",
+        "description": "Manutenção da iluminação.",
         "services": [
           {
             "id": "reparo de luminárias...",
@@ -1304,7 +1135,7 @@
       {
         "id": "Árvores",
         "name": "Árvores",
-        "description": "O plantio, a poda e a remoção de árvores em vias e áreas públicas.",
+        "description": "Cuidado com as árvores.",
         "services": [
           {
             "id": "poda de árvores...",
@@ -1315,32 +1146,37 @@
       {
         "id": "Serviços funerários",
         "name": "Serviços funerários",
-        "description": "Os serviços de cemitério, velório e sepultamento oferecidos pelo município.",
-        "services": []
+        "description": "Serviços relacionados a funerais.",
+        "services": [
+          {
+            "id": "relacionados a cemitérios e serviços funerários",
+            "name": "relacionados a cemitérios e serviços funerários"
+          }
+        ]
       }
     ]
   },
   {
     "id": "Defesa Civil",
     "name": "Defesa Civil",
-    "description": "As ações de prevenção e resposta a desastres naturais e emergências.",
+    "description": "Ações de proteção à população.",
     "subthemes": [
       {
         "id": "Vistorias",
         "name": "Vistorias",
-        "description": "Vistorias para avaliação de segurança em imóveis.",
+        "description": "Análise de segurança de imóveis.",
         "services": []
       },
       {
         "id": "Desinterdição /",
         "name": "Desinterdição /",
-        "description": "Desinterdição de áreas ou imóveis interditados.",
+        "description": "Liberação de áreas interditadas.",
         "services": []
       },
       {
         "id": "Projetos",
         "name": "Projetos",
-        "description": "Projetos de prevenção e mitigação de riscos.",
+        "description": "Elaboração de planos de segurança.",
         "services": []
       }
     ]
@@ -1348,31 +1184,79 @@
   {
     "id": "Trabalho",
     "name": "Trabalho",
-    "description": "Serviços e informações sobre emprego e qualificação profissional.",
+    "description": "Oportunidades de trabalho e renda.",
     "subthemes": [
       {
         "id": "Pessoa Jurídica / Empresas e Autônomo",
         "name": "Pessoa Jurídica / Empresas e Autônomo",
-        "description": "Suporte e informações para empresas e trabalhadores autônomos.",
+        "description": "Suporte a empresas e autônomos.",
         "services": []
+      },
+      {
+        "id": "Emprego formal",
+        "name": "Emprego formal",
+        "description": "Vagas de emprego com carteira assinada.",
+        "services": [
+          {
+            "id": "carteira de trabalho",
+            "name": "carteira de trabalho"
+          },
+          {
+            "id": "programa trabalha rio",
+            "name": "programa trabalha rio"
+          },
+          {
+            "id": "vagas de emprego...",
+            "name": "vagas de emprego..."
+          }
+        ]
+      },
+      {
+        "id": "Estágio",
+        "name": "Estágio",
+        "description": "Oportunidades para estudantes.",
+        "services": [
+          {
+            "id": "estágio na prefeitura...",
+            "name": "estágio na prefeitura..."
+          }
+        ]
+      },
+      {
+        "id": "Empreendedorismo",
+        "name": "Empreendedorismo",
+        "description": "Incentivo à criação de negócios.",
+        "services": [
+          {
+            "id": "programa empreenda rio...",
+            "name": "programa empreenda rio..."
+          }
+        ]
       }
     ]
   },
   {
     "id": "Empresas",
     "name": "Empresas",
-    "description": "Serviços e informações para empresas e empreendedores.",
-    "subthemes": []
+    "description": "Informações para empresas.",
+    "subthemes": [
+      {
+        "id": "[pensar subcategorias]",
+        "name": "[pensar subcategorias]",
+        "description": "",
+        "services": []
+      }
+    ]
   },
   {
     "id": "Trânsito",
     "name": "Trânsito",
-    "description": "Informações sobre a circulação de veículos e pessoas nas vias.",
+    "description": "Regulamentação do tráfego de veículos.",
     "subthemes": [
       {
         "id": "Estacionamento",
         "name": "Estacionamento",
-        "description": "Regras e informações sobre o estacionamento de veículos.",
+        "description": "Vagas para veículos pararem.",
         "services": [
           {
             "id": "área de embarque e desembarque",
@@ -1391,7 +1275,7 @@
       {
         "id": "Placas e sinal de trânsito",
         "name": "Placas e sinal de trânsito",
-        "description": "Informações sobre placas e sinalização de trânsito.",
+        "description": "Solicitação de placas e sinalização de trânsito.",
         "services": [
           {
             "id": "sinalização gráfica horizontal",
@@ -1414,7 +1298,7 @@
       {
         "id": "Multas",
         "name": "Multas",
-        "description": "Informações sobre multas e penalidades de trânsito.",
+        "description": "Informações sobre multas de trânsito.",
         "services": [
           {
             "id": "multas de trânsito",
@@ -1429,7 +1313,7 @@
       {
         "id": "Fiscalização eletrônica",
         "name": "Fiscalização eletrônica",
-        "description": "Informações sobre o monitoramento eletrônico de veículos.",
+        "description": "Dúvidas sobre fiscalização eletrônica de trânsito.",
         "services": [
           {
             "id": "implantação",
@@ -1448,7 +1332,7 @@
       {
         "id": "Carteira Digital de Trânsito",
         "name": "Carteira Digital de Trânsito",
-        "description": "Informações sobre a Carteira Nacional de Habilitação digital.",
+        "description": "Orientações sobre a Carteira Digital de Trânsito.",
         "services": []
       }
     ]
@@ -1456,67 +1340,181 @@
   {
     "id": "Transparência",
     "name": "Transparência",
-    "description": "Acesso a informações e dados públicos do município.",
+    "description": "Portal da administração pública para acesso a informações.",
     "subthemes": [
       {
         "id": "Anticorrupção",
         "name": "Anticorrupção",
-        "description": "Medidas de combate à corrupção na administração pública.",
+        "description": "Denúncias e informações sobre combate à corrupção.",
         "services": []
       },
       {
         "id": "Acesso à Informação (LAI)",
         "name": "Acesso à Informação (LAI)",
-        "description": "Acesso a informações públicas conforme a Lei.",
+        "description": "Solicitação de informações com base na Lei de Acesso à Informação.",
         "services": []
       },
       {
         "id": "Proteção de dados (LGPD)",
         "name": "Proteção de dados (LGPD)",
-        "description": "Regras e segurança sobre o tratamento de dados pessoais.",
+        "description": "Informações sobre a Lei Geral de Proteção de Dados.",
         "services": []
+      }
+    ]
+  },
+  {
+    "id": "Transporte",
+    "name": "Transporte",
+    "description": "Serviços relacionados ao sistema de transporte público.",
+    "subthemes": [
+      {
+        "id": "Ônibus",
+        "name": "Ônibus",
+        "description": "Informações sobre o serviço de transporte por ônibus.",
+        "services": [
+          {
+            "id": "ar condicionado",
+            "name": "ar condicionado"
+          },
+          {
+            "id": "conduta e condução do motorista",
+            "name": "conduta e condução do motorista"
+          },
+          {
+            "id": "irregularidades...",
+            "name": "irregularidades..."
+          }
+        ]
+      },
+      {
+        "id": "BRT",
+        "name": "BRT",
+        "description": "Informações sobre o sistema de transporte BRT.",
+        "services": [
+          {
+            "id": "irregularidades",
+            "name": "irregularidades"
+          },
+          {
+            "id": "estações...",
+            "name": "estações..."
+          }
+        ]
+      },
+      {
+        "id": "Vans e kombis",
+        "name": "Vans e kombis",
+        "description": "Informações sobre o serviço de transporte por vans e kombis.",
+        "services": [
+          {
+            "id": "vistorias... inclusão/baixa/permuta...",
+            "name": "vistorias... inclusão/baixa/permuta..."
+          }
+        ]
+      },
+      {
+        "id": "Transporte escolar",
+        "name": "Transporte escolar",
+        "description": "Informações sobre o serviço de transporte escolar.",
+        "services": [
+          {
+            "id": "vistorias... inclusão/baixa/permuta...",
+            "name": "vistorias... inclusão/baixa/permuta..."
+          }
+        ]
+      },
+      {
+        "id": "VLT",
+        "name": "VLT",
+        "description": "Informações sobre o sistema de transporte VLT.",
+        "services": [
+          {
+            "id": "pagamento de multa",
+            "name": "pagamento de multa"
+          }
+        ]
+      },
+      {
+        "id": "Táxi e mototáxi",
+        "name": "Táxi e mototáxi",
+        "description": "Informações sobre o serviço de transporte por táxis e mototáxis.",
+        "services": [
+          {
+            "id": "táxi.rio...",
+            "name": "táxi.rio..."
+          }
+        ]
+      },
+      {
+        "id": "Bicicletas",
+        "name": "Bicicletas",
+        "description": "Serviços relacionados ao uso de bicicletas.",
+        "services": [
+          {
+            "id": "ciclovias",
+            "name": "ciclovias"
+          },
+          {
+            "id": "bikerio",
+            "name": "bikerio"
+          },
+          {
+            "id": "criação de paraciclos...",
+            "name": "criação de paraciclos..."
+          }
+        ]
+      },
+      {
+        "id": "Jaé",
+        "name": "Jaé",
+        "description": "Informações sobre o programa Jaé.",
+        "services": []
+      },
+      {
+        "id": "Gratuidade",
+        "name": "Gratuidade",
+        "description": "Informações sobre a gratuidade no transporte público.",
+        "services": [
+          {
+            "id": "gratuidade no transporte público...",
+            "name": "gratuidade no transporte público..."
+          }
+        ]
+      },
+      {
+        "id": "Tarifas",
+        "name": "Tarifas",
+        "description": "Informações sobre as tarifas do transporte público.",
+        "services": [
+          {
+            "id": "Tarifas de transportes",
+            "name": "Tarifas de transportes"
+          }
+        ]
       }
     ]
   },
   {
     "id": "Tributos",
     "name": "Tributos",
-    "description": "Informações sobre impostos e taxas cobradas pelo município.",
+    "description": "Serviços relacionados a impostos e taxas municipais.",
     "subthemes": [
       {
         "id": "Dívida Ativa",
         "name": "Dívida Ativa",
-        "description": "Informações sobre débitos pendentes com o município.",
+        "description": "Informações sobre débitos inscritos na Dívida Ativa.",
         "services": []
-      }
-    ]
-  },
-  {
-    "id": "Serviços funerários",
-    "name": "Serviços funerários",
-    "description": "Informações sobre serviços e assistência funerária municipal.",
-    "subthemes": [
-      {
-        "id": "Taxas municipais",
-        "name": "Taxas municipais",
-        "description": "Valores e pagamento de taxas municipais de serviços funerários.",
-        "services": [
-          {
-            "id": "taxa de fiscalização de cemitério...",
-            "name": "taxa de fiscalização de cemitério..."
-          }
-        ]
       },
       {
         "id": "ISS",
         "name": "ISS",
-        "description": "Imposto Sobre Serviços (ISS) em atividades funerárias.",
+        "description": "Informações sobre o Imposto Sobre Serviços.",
         "services": []
       },
       {
         "id": "Nota Carioca",
         "name": "Nota Carioca",
-        "description": "Emissão de Nota Carioca para serviços funerários.",
+        "description": "Informações sobre o programa Nota Carioca.",
         "services": []
       }
     ]
@@ -1524,12 +1522,12 @@
   {
     "id": "Turismo e Eventos",
     "name": "Turismo e Eventos",
-    "description": "Informações sobre turismo e eventos na cidade.",
+    "description": "Serviços relacionados ao turismo e eventos na cidade.",
     "subthemes": [
       {
         "id": "Transporte",
         "name": "Transporte",
-        "description": "Opções de transporte para turistas e participantes de eventos.",
+        "description": "Informações sobre transporte para turistas e eventos.",
         "services": [
           {
             "id": "Informações gerais sobre transporte público",
@@ -1540,7 +1538,7 @@
       {
         "id": "Saúde",
         "name": "Saúde",
-        "description": "Serviços de saúde para turistas e participantes de eventos.",
+        "description": "Informações sobre serviços de saúde para turistas e eventos.",
         "services": [
           {
             "id": "Informações gerais sobre saúde pública do Rio",
@@ -1551,7 +1549,7 @@
       {
         "id": "Turismo pela cidade",
         "name": "Turismo pela cidade",
-        "description": "Roteiros turísticos e atrações da cidade.",
+        "description": "Roteiros e informações sobre pontos turísticos da cidade.",
         "services": [
           {
             "id": "Informações turísticas",
@@ -1575,12 +1573,12 @@
   {
     "id": "Carnaval (volante)",
     "name": "Carnaval (volante)",
-    "description": "Informações gerais sobre a celebração do Carnaval.",
+    "description": "Serviços e informações sobre o Carnaval.",
     "subthemes": [
       {
         "id": "Blocos de rua",
         "name": "Blocos de rua",
-        "description": "Informações sobre os blocos de Carnaval nas ruas.",
+        "description": "Informações sobre os blocos de rua do Carnaval.",
         "services": [
           {
             "id": "Agenda de blocos de rua",
@@ -1595,7 +1593,7 @@
       {
         "id": "Trabalhadores do Carnaval",
         "name": "Trabalhadores do Carnaval",
-        "description": "Informações para profissionais que atuam no Carnaval.",
+        "description": "Informações para trabalhadores durante o período do Carnaval.",
         "services": [
           {
             "id": "cadastro",
