@@ -1,7 +1,7 @@
 import fs from 'fs';
 
 const apiKey = process.env.VITE_GEMINI_API_KEY;
-const dataRaw = fs.readFileSync('./public/initial_data.json', 'utf8');
+const dataRaw = fs.readFileSync('../public/initial_data.json', 'utf8');
 const appData = JSON.parse(dataRaw);
 
 const promptBase = `Atue como um redator especialista em serviços públicos municipais. Sua tarefa é criar uma descrição extremamente objetiva para os temas e subtemas fornecidos de um portal de atendimento 1746.
@@ -75,7 +75,7 @@ async function run() {
         }
     }
     
-    fs.writeFileSync('./public/initial_data.json', JSON.stringify(appData, null, 2));
+    fs.writeFileSync('../public/initial_data.json', JSON.stringify(appData, null, 2));
     console.log("Arquivo initial_data.json atualizado e salvo com sucesso!");
 }
 

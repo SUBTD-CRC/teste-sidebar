@@ -1,8 +1,8 @@
 import fs from 'fs';
 import { parse } from 'csv-parse/sync';
 
-const csvPath = './De X Para - Portal 1746 e SGRC - Trabalho CRC - Barbosa.csv';
-const jsonPath = './public/initial_data.json';
+const csvPath = '../data/De X Para - Portal 1746 e SGRC - Trabalho CRC - Barbosa.csv';
+const jsonPath = '../public/initial_data.json';
 
 // Step 1: Read existing data for descriptions
 let existingDescriptions = {
